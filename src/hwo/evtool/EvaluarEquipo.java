@@ -1,9 +1,13 @@
 package hwo.evtool;
 
-public class MainEvaluacion {
+public class EvaluarEquipo {
+	String description = "Evaluar equipo";
 
-	public static void main(String args[])
-	{
+	public String getDescription() {
+		return description;
+	}
+
+	public double evaluar () {
 			Evaluacion evalArquitecto = new EvaluarArquitecto();
 			evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
 			evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
@@ -27,5 +31,7 @@ public class MainEvaluacion {
 
 			System.out.println(evalEducacion.getDescription()
 				+ " $" + evalEducacion.cost());
+
+			return evalArquitecto.cost()+evalDirector.cost()+evalEducacion.cost();
 	 }
 }
