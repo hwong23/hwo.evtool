@@ -1,6 +1,9 @@
-package hwo.evtool;
+package hwo.evtool.equipo.educacion;
 
-public class CriterioExperienciaEspecificaEducacion extends CriterioEvaluacion {
+import hwo.evtool.equipo.CriterioEvaluacion;
+import hwo.evtool.equipo.Evaluacion;
+
+class CriterioExperienciaEspecificaEducacion extends CriterioEvaluacion {
 	Evaluacion evaluar;
 
 	public CriterioExperienciaEspecificaEducacion(Evaluacion evaluar) {

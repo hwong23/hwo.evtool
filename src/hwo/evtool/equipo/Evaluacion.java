@@ -1,7 +1,7 @@
-package hwo.evtool;
+package hwo.evtool.equipo;
 
 public abstract class Evaluacion {
-	String description = "Unknown Evaluacion";
+	public String description = "Unknown Evaluacion";
 
 	public String getDescription() {
 		return description;

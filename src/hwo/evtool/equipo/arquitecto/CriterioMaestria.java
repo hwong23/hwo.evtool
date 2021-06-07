@@ -1,6 +1,9 @@
-package hwo.evtool;
+package hwo.evtool.equipo.arquitecto;
 
-public class CriterioMaestria extends CriterioEvaluacion {
+import hwo.evtool.equipo.CriterioEvaluacion;
+import hwo.evtool.equipo.Evaluacion;
+
+class CriterioMaestria extends CriterioEvaluacion {
 	Evaluacion evaluar;
 
 	public CriterioMaestria(Evaluacion evaluar) {
@@ -12,6 +15,6 @@ public class CriterioMaestria extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return .10 + evaluar.cost();
+		return .20 + evaluar.cost();
 	}
 }

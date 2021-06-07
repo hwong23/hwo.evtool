@@ -1,6 +1,9 @@
-package hwo.evtool;
+package hwo.evtool.equipo.arquitecto;
 
-public class CriterioExperienciaGeneral extends CriterioEvaluacion {
+import hwo.evtool.equipo.CriterioEvaluacion;
+import hwo.evtool.equipo.Evaluacion;
+
+class CriterioExperienciaGeneral extends CriterioEvaluacion {
 	Evaluacion evaluar;
 
 	public CriterioExperienciaGeneral(Evaluacion evaluar) {
