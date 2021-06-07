@@ -14,8 +14,8 @@ public class EvaluarEquipo {
 
 	public double evaluar () {
 		EvaluarArquitecto evalArquitecto = new EvaluarArquitecto();
-		EvaluacionDirector evalDirector = new EvaluacionDirector();
-		EvaluacionEducacion evalEducacion = new EvaluacionEducacion();
+		EvaluarDirector evalDirector = new EvaluarDirector();
+		EvaluarEducacion evalEducacion = new EvaluarEducacion();
 
 		return evalArquitecto.evaluar()+evalDirector.evaluar()+evalEducacion.evaluar();
 	 }
