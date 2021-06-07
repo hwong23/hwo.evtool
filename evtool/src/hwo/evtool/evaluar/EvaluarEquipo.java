@@ -1,4 +1,4 @@
-package main;
+package hwo.evtool.evaluar;
 
 import hwo.evtool.equipo.arquitecto.*;
 import hwo.evtool.equipo.director.*;
@@ -13,7 +13,7 @@ public class EvaluarEquipo {
 	}
 
 	public double evaluar () {
-		EvaluacionArquitecto evalArquitecto = new EvaluacionArquitecto();
+		EvaluarArquitecto evalArquitecto = new EvaluarArquitecto();
 		EvaluacionDirector evalDirector = new EvaluacionDirector();
 		EvaluacionEducacion evalEducacion = new EvaluacionEducacion();
 

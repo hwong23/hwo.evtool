@@ -2,12 +2,17 @@ package hwo.evtool.equipo.arquitecto;
 
 import hwo.evtool.evaluacion.Evaluacion;
 
-class EvaluarArquitecto extends Evaluacion {
-	public EvaluarArquitecto() {
-		description = "Evaluar Arquitecto";
-	}
+public class EvaluarArquitecto {
 
-	public double cost() {
-		return 0.0;
+	public double evaluar() {
+		Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto();
+		evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
+		evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
+		evalArquitecto = new CriterioMaestria (evalArquitecto);
+
+		System.out.println(evalArquitecto.getDescription()
+			+ " $" + evalArquitecto.cost());
+		
+		return evalArquitecto.cost();
 	}
 }
