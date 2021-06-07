@@ -1,7 +1,7 @@
 package hwo.evtool.equipo.arquitecto;
 
-import hwo.evtool.equipo.CriterioEvaluacion;
-import hwo.evtool.equipo.Evaluacion;
+import hwo.evtool.evaluacion.CriterioEvaluacion;
+import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioMaestria extends CriterioEvaluacion {
 	Evaluacion evaluar;

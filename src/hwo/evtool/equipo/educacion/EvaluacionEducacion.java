@@ -1,6 +1,6 @@
 package hwo.evtool.equipo.educacion;
 
-import hwo.evtool.equipo.Evaluacion;
+import hwo.evtool.evaluacion.Evaluacion;
 
 public class EvaluacionEducacion {
 	
