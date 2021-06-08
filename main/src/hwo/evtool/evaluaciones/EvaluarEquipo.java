@@ -1,6 +1,6 @@
 package hwo.evtool.evaluaciones;
 
-import hwo.evtool.equipo.arquitecto.EvaluarArquitecto;
+import hwo.evtool.equipo.arquitecto.*;
 import hwo.evtool.equipo.director.*;
 import hwo.evtool.equipo.educacion.*;
 
