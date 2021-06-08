@@ -1,10 +1,8 @@
 package main;
 
-import hwo.evtool.componenteEvaluacion.ComponenteEvaluacionEquipo;
-import hwo.evtool.componenteEvaluacion.ComponenteEvaluacionPropuesta;
+import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.control.Control;
-import hwo.evtool.evaluaciones.EvaluarEquipo;
-import hwo.evtool.evaluaciones.EvaluarPropuesta;
+import hwo.evtool.evaluaciones.*;
 
 
 public class MainEjecutarControl {
