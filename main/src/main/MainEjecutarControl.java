@@ -1,11 +1,11 @@
 package main;
 
-import hwo.evtool.componentesEvaluacion.ComponenteEvaluacion;
+import hwo.evtool.componenteEvaluacion.ComponenteEvaluacion;
 import hwo.evtool.control.Control;
 import hwo.evtool.evaluaciones.EvaluarEquipo;
 
 
-public class MainEjecutarRemoto {
+public class MainEjecutarControl {
 
 	public static void main(String[] args) {
 		Control cntrol = new Control ();

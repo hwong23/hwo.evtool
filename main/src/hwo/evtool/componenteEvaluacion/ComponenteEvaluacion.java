@@ -1,4 +1,4 @@
-package hwo.evtool.componentesEvaluacion;
+package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
 import hwo.evtool.evaluaciones.EvaluarEquipo;
