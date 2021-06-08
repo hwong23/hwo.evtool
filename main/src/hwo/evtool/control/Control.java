@@ -1,4 +1,4 @@
-package hwo.control.evaluaciones;
+package hwo.evtool.control;
 
 public class Control {
 	Comando estante;
