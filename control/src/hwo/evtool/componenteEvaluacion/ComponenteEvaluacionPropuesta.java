@@ -1,12 +1,12 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.evaluaciones.EvaluarEquipo;
+import hwo.evtool.evaluaciones.EvaluarPropuesta;
 
-public class ComponenteEvaluacion implements Comando {
-	EvaluarEquipo equipo;
+public class ComponenteEvaluacionPropuesta implements Comando {
+	EvaluarPropuesta equipo;
 	
-	public ComponenteEvaluacion (EvaluarEquipo equipoClave) {
+	public ComponenteEvaluacionPropuesta (EvaluarPropuesta equipoClave) {
 		this.equipo = equipoClave;
 	}
 
@@ -17,3 +17,4 @@ public class ComponenteEvaluacion implements Comando {
 				+ " $" + this.equipo.evaluar());
 	}
 }
+

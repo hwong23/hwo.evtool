@@ -1,0 +1,21 @@
+package hwo.evtool.evaluaciones;
+
+import hwo.evtool.equipo.arquitecto.*;
+import hwo.evtool.equipo.director.*;
+import hwo.evtool.equipo.educacion.*;
+
+public class EvaluarPropuesta {
+	String description = "Evaluar propuesta";
+
+	public String getDescription() {
+		return description;
+	}
+
+	public double evaluar () {
+		EvaluarArquitecto evalArquitecto = new EvaluarArquitecto();
+		EvaluarDirector evalDirector = new EvaluarDirector();
+		EvaluarEducacion evalEducacion = new EvaluarEducacion();
+
+		return evalArquitecto.evaluar()+evalDirector.evaluar()+evalEducacion.evaluar();
+	 }
+}

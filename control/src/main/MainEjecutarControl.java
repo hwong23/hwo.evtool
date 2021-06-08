@@ -1,8 +1,10 @@
 package main;
 
-import hwo.evtool.componenteEvaluacion.ComponenteEvaluacion;
+import hwo.evtool.componenteEvaluacion.ComponenteEvaluacionEquipo;
+import hwo.evtool.componenteEvaluacion.ComponenteEvaluacionPropuesta;
 import hwo.evtool.control.Control;
 import hwo.evtool.evaluaciones.EvaluarEquipo;
+import hwo.evtool.evaluaciones.EvaluarPropuesta;
 
 
 public class MainEjecutarControl {
@@ -11,13 +13,13 @@ public class MainEjecutarControl {
 		Control cntrol = new Control ();
 		
 		EvaluarEquipo eqpoClave = new EvaluarEquipo();
-		ComponenteEvaluacion cmpntEval = new ComponenteEvaluacion(eqpoClave);
+		ComponenteEvaluacionEquipo cmpntEval = new ComponenteEvaluacionEquipo(eqpoClave);
 				
-		EvaluarEquipo eqpoClave2 = new EvaluarEquipo();
-		ComponenteEvaluacion cmpntEval2 = new ComponenteEvaluacion(eqpoClave2);
+		EvaluarPropuesta propuesta = new EvaluarPropuesta();
+		ComponenteEvaluacionPropuesta cmpntEval2 = new ComponenteEvaluacionPropuesta(propuesta);
 
 		cntrol.SetComando(0, cmpntEval);
-		cntrol.SetComando(1, cmpntEval);
+		cntrol.SetComando(1, cmpntEval2);
 		cntrol.LanzarEvaluacion1(0);
 		cntrol.LanzarEvaluacion1(1);
 	}
