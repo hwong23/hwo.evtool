@@ -3,14 +3,18 @@ package hwo.evtool.control;
 import hwo.evtool.comando.Comando;
 
 public class Control {
-	Comando estante;
+	Comando[] estantes;
 	
-	public void SetComando (Comando cmd) {
-		this.estante = cmd;
+	public Control () {
+		estantes = new Comando[2];
 	}
 	
-	public void LanzarEvaluacion1 () {
-		this.estante.ejecutar();
+	public void SetComando (int idx, Comando cmd) {
+		this.estantes[idx] = cmd;
+	}
+	
+	public void LanzarEvaluacion1 (int idx) {
+		this.estantes[idx].ejecutar();
 	}
 
 }
