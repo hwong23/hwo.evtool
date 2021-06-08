@@ -12,6 +12,8 @@ public class ComponenteEvaluacion implements Comando {
 
 	@Override
 	public void ejecutar() {
-		this.equipo.evaluar();
+		System.out.println("--- Control ---");
+		System.out.println(this.equipo.getDescription()
+				+ " $" + this.equipo.evaluar());
 	}
 }
