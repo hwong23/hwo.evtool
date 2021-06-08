@@ -1,14 +1,15 @@
 package main;
 
 import hwo.evtool.componentesEvaluacion.ComponenteEvaluacion;
-import hwo.evtool.evaluaciones.EquipoClave;
+import hwo.evtool.control.Control;
+import hwo.evtool.evaluaciones.EvaluarEquipo;
 
 
 public class MainEjecutarRemoto {
 
 	public static void main(String[] args) {
 		Control cntrol = new Control ();
-		EquipoClave eqpoClave = new EquipoClave();
+		EvaluarEquipo eqpoClave = new EvaluarEquipo();
 		ComponenteEvaluacion cmpntEval = new ComponenteEvaluacion(eqpoClave);
 		
 		cntrol.SetComando(cmpntEval);

@@ -1,5 +1,7 @@
 package main;
 
+import hwo.evtool.evaluaciones.EvaluarEquipo;
+
 public class MainEvaluarEquipo {
 
 	public static void main(String args[])

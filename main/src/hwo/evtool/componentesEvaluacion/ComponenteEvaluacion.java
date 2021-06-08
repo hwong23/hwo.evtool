@@ -1,12 +1,12 @@
 package hwo.evtool.componentesEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.evaluaciones.EquipoClave;
+import hwo.evtool.evaluaciones.EvaluarEquipo;
 
 public class ComponenteEvaluacion implements Comando {
-	EquipoClave equipo;
+	EvaluarEquipo equipo;
 	
-	public ComponenteEvaluacion (EquipoClave equipoClave) {
+	public ComponenteEvaluacion (EvaluarEquipo equipoClave) {
 		this.equipo = equipoClave;
 	}
 
