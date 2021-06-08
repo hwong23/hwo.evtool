@@ -1,6 +1,7 @@
 package main;
 
-import hwo.evtool.control.*;
+import hwo.evtool.componentesEvaluacion.ComponenteEvaluacion;
+import hwo.evtool.evaluaciones.EquipoClave;
 
 
 public class MainEjecutarRemoto {

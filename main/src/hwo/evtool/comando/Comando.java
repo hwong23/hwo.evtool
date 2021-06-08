@@ -1,4 +1,4 @@
-package hwo.evtool.control;
+package hwo.evtool.comando;
 
 public interface Comando {
 	public void ejecutar();

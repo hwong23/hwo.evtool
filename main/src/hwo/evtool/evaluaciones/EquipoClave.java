@@ -1,4 +1,4 @@
-package hwo.evtool.control;
+package hwo.evtool.evaluaciones;
 
 public class EquipoClave {
 	public void evaluar() {

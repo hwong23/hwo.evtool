@@ -1,4 +1,6 @@
-package hwo.evtool.control;
+package main;
+
+import hwo.evtool.comando.Comando;
 
 public class Control {
 	Comando estante;
