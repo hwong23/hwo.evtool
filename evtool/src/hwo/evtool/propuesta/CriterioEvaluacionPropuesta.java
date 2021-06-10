@@ -4,7 +4,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionPropuesta extends Evaluacion {
 	public CriterioEvaluacionPropuesta() {
-		description = "Evaluar Problema";
+		description = "Evaluar Propuesta";
 	}
 
 	public double cost() {

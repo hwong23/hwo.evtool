@@ -14,6 +14,6 @@ class CriterioEvaluacionTecnico extends Evaluacion {
 	}
 
 	public double cost() {
-		return 0.15 + evaluar.cost();
+		return 0.35 + evaluar.cost();
 	}
 }
