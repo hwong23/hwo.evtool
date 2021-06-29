@@ -9,11 +9,11 @@ public class Control {
 		estantes = new Comando[2];
 	}
 	
-	public void SetComando (int idx, Comando cmd) {
+	public void setComando (int idx, Comando cmd) {
 		this.estantes[idx] = cmd;
 	}
 	
-	public void LanzarEvaluacion1 (int idx) {
+	public void llamarEvaluacion1 (int idx) {
 		this.estantes[idx].ejecutar();
 	}
 

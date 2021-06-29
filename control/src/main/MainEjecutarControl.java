@@ -20,10 +20,10 @@ public class MainEjecutarControl {
 		/* solicitd */ ComponenteEvaluacionPropuesta cmpntEval2 = new ComponenteEvaluacionPropuesta(propuesta);
 
 		Control cntrol = new Control ();
-		/* llamador */ cntrol.SetComando(0, cmpntEval);
-		/* llamador */ cntrol.SetComando(1, cmpntEval2);
+		/* llamador */ cntrol.setComando(0, cmpntEval);
+		/* llamador */ cntrol.setComando(1, cmpntEval2);
 		
-		cntrol.LanzarEvaluacion1(0);
-		cntrol.LanzarEvaluacion1(1);
+		cntrol.llamarEvaluacion1(0);
+		cntrol.llamarEvaluacion1(1);
 	}
 }
