@@ -13,17 +13,21 @@ public class MainEjecutarControl {
 
 	
 	protected void run () {
-		/* receptor */ EvaluarEquipo eqpoClave = new EvaluarEquipo();
-		/* solicitd */ ComponenteEvaluacionEquipo cmpntEval = new ComponenteEvaluacionEquipo(eqpoClave);
-		
-		/* receptor */ EvaluarPropuesta propuesta = new EvaluarPropuesta();
-		/* solicitd */ ComponenteEvaluacionPropuesta cmpntEval2 = new ComponenteEvaluacionPropuesta(propuesta);
-
 		Control cntrol = new Control ();
-		/* llamador */ cntrol.setComando(0, cmpntEval);
-		/* llamador */ cntrol.setComando(1, cmpntEval2);
+		int i;
 		
-		cntrol.llamarEvaluacion1(0);
-		cntrol.llamarEvaluacion1(1);
-	}
+		/* receptor */ EvaluarEquipo evaluarequipo = new EvaluarEquipo();
+		/* solicitd */ Cmpnnt_EvaluarEquipo cmpntEvaluarEquipo = new Cmpnnt_EvaluarEquipo(evaluarequipo);
+		
+		/* receptor */ EvaluarPropuesta evaluarpropuesta = new EvaluarPropuesta();
+		/* solicitd */ Cmpnnt_EvaluarPropuesta cmpntEvaluarPropuesta = new Cmpnnt_EvaluarPropuesta(evaluarpropuesta);
+		
+		
+		i = 0;
+		/* llamador */ cntrol.setComando(i++, cmpntEvaluarEquipo);
+		/* llamador */ cntrol.setComando(i++, cmpntEvaluarPropuesta);
+		
+		i = 0;
+		cntrol.llamarEvaluacion1(i++);
+		cntrol.llamarEvaluacion1(i++);	}
 }
