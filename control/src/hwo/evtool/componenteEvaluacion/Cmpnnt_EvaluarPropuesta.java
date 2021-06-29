@@ -3,11 +3,11 @@ package hwo.evtool.componenteEvaluacion;
 import hwo.evtool.comando.Comando;
 import hwo.evtool.evaluaciones.EvaluarPropuesta;
 
-public class ComponenteEvaluacionPropuesta implements Comando {
+public class Cmpnnt_EvaluarPropuesta implements Comando {
 	EvaluarPropuesta propuesta;
 	String nombre;
 	
-	public ComponenteEvaluacionPropuesta (EvaluarPropuesta propuesta) {
+	public Cmpnnt_EvaluarPropuesta (EvaluarPropuesta propuesta) {
 		this.nombre = "EvaluacionPropuesta";
 		this.propuesta = propuesta;
 	}
