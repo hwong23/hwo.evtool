@@ -6,10 +6,10 @@ public class EvaluarArquitecto {
 
 
 	public double evaluar() {
-		Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto();
-		evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
-		evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
-		evalArquitecto = new CriterioMaestria (evalArquitecto);
+		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto();
+		/* decordr */ evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
+		/* decordr */ evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
+		/* decordr */ evalArquitecto = new CriterioMaestria (evalArquitecto);
 
 		System.out.println(evalArquitecto.getDescription()
 			+ " $" + evalArquitecto.cost());

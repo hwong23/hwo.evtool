@@ -5,10 +5,10 @@ import hwo.evtool.evaluacion.Evaluacion;
 public class EvaluarDirector {
 
 	public double evaluar() {
-		Evaluacion evalDirector = new CriterioEvaluacionDirector();
-		evalDirector = new CriterioExperienciaEspecificaDirector (evalDirector);
-		evalDirector = new CriterioExperienciaGeneralDirector (evalDirector);
-		evalDirector = new CriterioMaestriaDirector (evalDirector);
+		/* compont */ Evaluacion evalDirector = new CriterioEvaluacionDirector();
+		/* decordr */ evalDirector = new CriterioExperienciaEspecificaDirector (evalDirector);
+		/* decordr */ evalDirector = new CriterioExperienciaGeneralDirector (evalDirector);
+		/* decordr */ evalDirector = new CriterioMaestriaDirector (evalDirector);
 
 		System.out.println(evalDirector.getDescription()
 			+ " $" + evalDirector.cost());
