@@ -1,18 +1,17 @@
-package main;
 
 import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.control.Control;
 import hwo.evtool.evaluaciones.*;
 
-
-public class MainEjecutarControl {
+public class Proceso {
+	String[] EvaluarEquipo = {"EvaluarEquipo","2","3","Compilado1","IntConstant"};
+	String[] EvaluarPropuesta = {"EvaluarPropuesta","2.0","Comentario2", "StringConstant"};
 
 	public static void main(String[] args) {
-		new MainEjecutarControl().run();
+		new Proceso().run();
 	}
-
 	
-	protected void run () {
+	protected void run() {
 		Control cntrol = new Control ();
 		int i;
 		
@@ -29,5 +28,6 @@ public class MainEjecutarControl {
 		
 		i = 0;
 		cntrol.llamarEvaluacion1(i++);
-		cntrol.llamarEvaluacion1(i++);	}
+		cntrol.llamarEvaluacion1(i++);
+	}
 }
