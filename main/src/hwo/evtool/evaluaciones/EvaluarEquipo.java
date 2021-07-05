@@ -14,6 +14,10 @@ public class EvaluarEquipo {
 	String description = "Evaluar equipo";
 	String[] evalData;
 
+	public String[] getEvalData() {
+		return evalData;
+	}
+
 	public String getDescription() {
 		return description;
 	}
