@@ -6,7 +6,13 @@ import hwo.evtool.equipo.educacion.*;
 
 
 public class EvaluarEquipo {
+	public EvaluarEquipo(String[] str_EvaluarEquipo) {
+		super();
+		this.evalData = str_EvaluarEquipo;
+	}
+
 	String description = "Evaluar equipo";
+	String[] evalData;
 
 	public String getDescription() {
 		return description;

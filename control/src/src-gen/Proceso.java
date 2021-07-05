@@ -3,8 +3,8 @@ import hwo.evtool.control.Control;
 import hwo.evtool.evaluaciones.*;
 
 public class Proceso {
-		String[] str_EvaluarEquipo = {"EvaluarEquipo","2","3","Compilado1","IntConstant"};
-		String[] str_EvaluarPropuesta = {"EvaluarPropuesta","2.0","Comentario2", "StringConstant"};
+		String[] str_EvaluarEquipo = {"EvaluarEquipo","1","3","Compilado1","IntConstant"};
+		String[] str_EvaluarPropuesta = {"EvaluarPropuesta","2.10","Comentario2", "StringConstant"};
 
 	public static void main(String[] args) {
 		new Proceso().run();
@@ -13,10 +13,10 @@ public class Proceso {
 	protected void run() {
 		Control cntrol = new Control ();
 		
-		/* receptor */ EvaluarEquipo evaluarequipo = new EvaluarEquipo();
+		/* receptor */ EvaluarEquipo evaluarequipo = new EvaluarEquipo(str_EvaluarEquipo);
 		/* solicitd */ Cmpnnt_EvaluarEquipo cmpntEvaluarEquipo = new Cmpnnt_EvaluarEquipo(evaluarequipo);
 		
-		/* receptor */ EvaluarPropuesta evaluarpropuesta = new EvaluarPropuesta();
+		/* receptor */ EvaluarPropuesta evaluarpropuesta = new EvaluarPropuesta(str_EvaluarPropuesta);
 		/* solicitd */ Cmpnnt_EvaluarPropuesta cmpntEvaluarPropuesta = new Cmpnnt_EvaluarPropuesta(evaluarpropuesta);
 		
 		
