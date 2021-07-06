@@ -1,5 +1,7 @@
 package hwo.evtool.evaluaciones;
 
+import java.util.Arrays;
+
 import hwo.evtool.equipo.arquitecto.*;
 import hwo.evtool.equipo.director.*;
 import hwo.evtool.equipo.educacion.*;
@@ -11,18 +13,21 @@ public class EvaluarEquipo {
 		this.evalData = str_EvaluarEquipo;
 	}
 
-	String description = "Evaluar equipo";
+	String descripcion = "Evaluar equipo";
 	String[] evalData;
 
 	public String[] getEvalData() {
-		return evalData;
+		return this.evalData;
 	}
 
 	public String getDescription() {
-		return description;
+		return descripcion;
 	}
 
 	public double evaluar () {
+		System.out.println("--- " + this.descripcion + " ---con datos: " +
+			Arrays.toString(this.evalData));
+		
 		EvaluarArquitecto evalArquitecto = new EvaluarArquitecto();
 		EvaluarDirector evalDirector = new EvaluarDirector();
 		EvaluarEducacion evalEducacion = new EvaluarEducacion();

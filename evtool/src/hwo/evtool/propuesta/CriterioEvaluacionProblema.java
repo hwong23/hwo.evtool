@@ -5,9 +5,11 @@ import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionProblema extends CriterioEvaluacion {
 	Evaluacion evaluar;
+	private boolean cumple;
 	
 	public CriterioEvaluacionProblema (Evaluacion evaluar) {
 		this.evaluar = evaluar;
+		this.cumple = false;
 	}
 
 	public String getDescription() {
@@ -15,6 +17,6 @@ class CriterioEvaluacionProblema extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return 0.25 + evaluar.cost();
+		return this.cumple ? 0.25:0 + evaluar.cost();
 	}
 }

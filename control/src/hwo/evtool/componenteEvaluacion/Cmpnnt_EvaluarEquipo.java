@@ -2,6 +2,7 @@ package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
 import hwo.evtool.evaluaciones.EvaluarEquipo;
+import java.util.Arrays;
 
 public class Cmpnnt_EvaluarEquipo implements Comando {
 	String nombre;
@@ -15,7 +16,7 @@ public class Cmpnnt_EvaluarEquipo implements Comando {
 	@Override
 	public void ejecutar() {
 		System.out.println("--- Comando " + this.nombre + " ---");
-		System.out.println("Datos evaluados " + this.equipo.getEvalData()[0]);
+		
 		System.out.println(this.equipo.getDescription()
 				+ " $" + this.equipo.evaluar());
 	}
