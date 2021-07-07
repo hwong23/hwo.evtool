@@ -4,7 +4,7 @@ import hwo.evtool.evaluaciones.*;
 
 public class Proceso {
 		String[] str_EvaluarEquipo = {"EvaluarEquipo","1", "3","Compilado1","IntConstant"};
-		String[] str_EvaluarPropuesta = {"EvaluarPropuesta","2.10","Comentario2","StringConstant"};
+		String[] str_EvaluarPropuesta = {"EvaluarPropuesta","N","comentario eval ropuesta","SiNoConstant"};
 
 	public static void main(String[] args) {
 		new Proceso().run();

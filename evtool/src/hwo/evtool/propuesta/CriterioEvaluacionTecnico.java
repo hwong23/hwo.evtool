@@ -7,7 +7,6 @@ class CriterioEvaluacionTecnico extends Evaluacion {
 	
 	public CriterioEvaluacionTecnico (Evaluacion evaluar) {
 		this.evaluar = evaluar;
-		this.edata = evaluar.edata;
 	}
 
 	public String getDescription() {
@@ -15,6 +14,6 @@ class CriterioEvaluacionTecnico extends Evaluacion {
 	}
 
 	public double cost() {
-		return this.edata[0].equals("S") ? 0.35:0 + evaluar.cost();
+		return evaluar.edata[1].equals("S") ? 0.35:0 + evaluar.cost();
 	}
 }

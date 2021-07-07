@@ -8,7 +8,6 @@ class CriterioEvaluacionProblema extends CriterioEvaluacion {
 	
 	public CriterioEvaluacionProblema (Evaluacion evaluar) {
 		this.evaluar = evaluar;
-		this.edata = evaluar.edata;
 	}
 
 	public String getDescription() {
@@ -16,6 +15,6 @@ class CriterioEvaluacionProblema extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return this.edata[0].equals("S") ? 0.25:0 + evaluar.cost();
+		return evaluar.edata[1].equals("S") ? 0.25:0 + evaluar.cost();
 	}
 }
