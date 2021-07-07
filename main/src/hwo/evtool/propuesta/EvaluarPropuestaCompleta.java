@@ -5,6 +5,10 @@ import hwo.evtool.evaluacion.Evaluacion;
 public class EvaluarPropuestaCompleta {
 	String[] edata;
 	
+	public EvaluarPropuestaCompleta(String[] evalData) {
+		this.edata = evalData;
+	}
+
 	public double evaluar () {
 		/* compont */ Evaluacion evalPropuesta = new CriterioEvaluacionPropuesta(edata);
 		/* decordr */ evalPropuesta = new CriterioEvaluacionTecnico(evalPropuesta);

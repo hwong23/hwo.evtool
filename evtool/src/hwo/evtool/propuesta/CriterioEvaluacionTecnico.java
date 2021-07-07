@@ -7,6 +7,7 @@ class CriterioEvaluacionTecnico extends Evaluacion {
 	
 	public CriterioEvaluacionTecnico (Evaluacion evaluar) {
 		this.evaluar = evaluar;
+		this.edata = evaluar.edata;
 	}
 
 	public String getDescription() {

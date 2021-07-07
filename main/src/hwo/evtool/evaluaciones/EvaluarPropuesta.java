@@ -21,13 +21,8 @@ public class EvaluarPropuesta {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 			Arrays.toString(this.evalData));
 		
-		/* item-criterios */ EvaluarPropuestaCompleta evalPropuesta = new EvaluarPropuestaCompleta();
+		/* item-criterios */ EvaluarPropuestaCompleta evalPropuesta = new EvaluarPropuestaCompleta(evalData);
 
 		return evalPropuesta.evaluar();
 	 }
-
-	public String[] getEvalData() {
-		// TODO Auto-generated method stub
-		return this.evalData;
-	}
 }

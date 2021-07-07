@@ -8,6 +8,7 @@ class CriterioEvaluacionProblema extends CriterioEvaluacion {
 	
 	public CriterioEvaluacionProblema (Evaluacion evaluar) {
 		this.evaluar = evaluar;
+		this.edata = evaluar.edata;
 	}
 
 	public String getDescription() {
