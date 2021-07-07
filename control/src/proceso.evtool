@@ -5,7 +5,7 @@ eventos
 comandos 
 	EvaluarEquipo = 1 / 3 : "Compilado1" 
 	EvaluarPropuestaOff = "2.10" : "Comentario2"
-	EvaluarPropuesta = N : "comentario eval ropuesta"  
+	EvaluarPropuesta = S : "comentario eval ropuesta"  
 	
 state 
 	Evaluado 
