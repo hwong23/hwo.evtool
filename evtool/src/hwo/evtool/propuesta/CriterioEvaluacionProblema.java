@@ -15,6 +15,6 @@ class CriterioEvaluacionProblema extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return evaluar.edata[1].equals("S") ? 0.25:0 + evaluar.cost();
+		return Evaluacion.edata[1].equals("S") ? 0.25:0 + evaluar.cost();
 	}
 }

@@ -2,7 +2,7 @@ package hwo.evtool.evaluacion;
 
 public abstract class Evaluacion {
 	public String description = "Unknown Evaluacion";
-	public String[] edata;
+	protected static String[] edata;
 
 	public String getDescription() {
 		return description;

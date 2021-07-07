@@ -6,7 +6,7 @@ class CriterioEvaluacionPropuesta extends Evaluacion {
 	
 	public CriterioEvaluacionPropuesta(String[] edata) {
 		description = "Evaluar Propuesta";
-		this.edata = edata;
+		Evaluacion.edata = edata;
 	}
 
 	public double cost() {
