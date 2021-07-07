@@ -28,9 +28,9 @@ public class EvaluarEquipo {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 			Arrays.toString(this.evalData));
 		
-		EvaluarArquitecto evalArquitecto = new EvaluarArquitecto();
-		EvaluarDirector evalDirector = new EvaluarDirector();
-		EvaluarEducacion evalEducacion = new EvaluarEducacion();
+		/* item-criterios */ EvaluarArquitecto evalArquitecto = new EvaluarArquitecto();
+		/* item-criterios */ EvaluarDirector evalDirector = new EvaluarDirector();
+		/* item-criterios */ EvaluarEducacion evalEducacion = new EvaluarEducacion();
 
 		return evalArquitecto.evaluar()+evalDirector.evaluar()+evalEducacion.evaluar();
 	 }
