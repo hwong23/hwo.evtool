@@ -1,4 +1,4 @@
-package hwo.evtool.evaluaciones;
+package hwo.evtool.receptor.evaluacion;
 
 import java.util.Arrays;
 

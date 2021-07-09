@@ -1,6 +1,6 @@
 import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.control.Control;
-import hwo.evtool.evaluaciones.*;
+import hwo.evtool.receptor.evaluacion.*;
 
 public class Proceso {
 		String[] str_EvaluarEquipo = {"EvaluarEquipo","1", "3","Compilado1","IntConstant"};
