@@ -1,4 +1,4 @@
-package hwo.evtool.control;
+package hwo.evtool.ejecucion;
 
 import hwo.evtool.comando.Comando;
 
