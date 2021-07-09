@@ -9,6 +9,7 @@ public class Cmpnnt_EvaluarEquipo implements Comando {
 	/* receptor */ EvaluarEquipo equipo;
 	
 	public Cmpnnt_EvaluarEquipo (EvaluarEquipo receptor) {
+		 
 		this.nombre = "EvaluacionEquipo";
 		this.equipo = receptor;
 	}
