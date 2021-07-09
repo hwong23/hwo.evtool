@@ -2,8 +2,8 @@ import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.ejecucion.Control;
 
 public class Proceso {
-		String[] str_EvaluarEquipo = {"EvaluarEquipo","1", "3","Compilado1","IntConstant"};
-		String[] str_EvaluarPropuesta = {"EvaluarPropuesta","S","comentario eval ropuesta","SiNoConstant"};
+		String[] str_EvaluarEquipo = {"EvaluarEquipo","1", "4","Compilado1","IntConstant"};
+		String[] str_EvaluarPropuesta = {"EvaluarPropuesta","1", "2","comentario eval ropuesta","IntConstant"};
 
 	public static void main(String[] args) {
 		new Proceso().run();
