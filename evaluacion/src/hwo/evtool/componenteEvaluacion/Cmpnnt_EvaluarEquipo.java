@@ -1,8 +1,8 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.evaluaciones.EvaluarEquipo;
-import java.util.Arrays;
+import hwo.evtool.receptor.evaluacion.EvaluarEquipo;
+
 
 public class Cmpnnt_EvaluarEquipo implements Comando {
 	String nombre;

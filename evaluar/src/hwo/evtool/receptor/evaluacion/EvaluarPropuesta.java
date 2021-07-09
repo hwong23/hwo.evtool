@@ -2,6 +2,7 @@ package hwo.evtool.receptor.evaluacion;
 
 import java.util.Arrays;
 
+
 import hwo.evtool.propuesta.EvaluarPropuestaCompleta;
 
 public class EvaluarPropuesta {
