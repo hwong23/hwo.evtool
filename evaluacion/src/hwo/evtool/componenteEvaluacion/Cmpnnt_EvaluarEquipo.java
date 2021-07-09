@@ -8,10 +8,10 @@ public class Cmpnnt_EvaluarEquipo implements Comando {
 	String nombre;
 	/* receptor */ EvaluarEquipo equipo;
 	
-	public Cmpnnt_EvaluarEquipo (EvaluarEquipo receptor) {
+	public Cmpnnt_EvaluarEquipo (String[] str_EvaluarEquipo) {
 		 
 		this.nombre = "EvaluacionEquipo";
-		this.equipo = receptor;
+		this.equipo = new EvaluarEquipo(str_EvaluarEquipo);
 	}
 
 	@Override

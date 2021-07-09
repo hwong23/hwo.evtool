@@ -1,7 +1,5 @@
 import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.control.Control;
-import hwo.evtool.receptor.evaluacion.EvaluarEquipo;
-import hwo.evtool.receptor.evaluacion.EvaluarPropuesta;
 
 public class Proceso {
 		String[] str_EvaluarEquipo = {"EvaluarEquipo","1", "3","Compilado1","IntConstant"};
@@ -14,11 +12,8 @@ public class Proceso {
 	protected void run() {
 		Control cntrol = new Control ();
 		
-		/* receptor */ EvaluarEquipo evaluarequipo = new EvaluarEquipo(str_EvaluarEquipo);
-		/* solicitd */ Cmpnnt_EvaluarEquipo cmpntEvaluarEquipo = new Cmpnnt_EvaluarEquipo(evaluarequipo);
-		
-		/* receptor */ EvaluarPropuesta evaluarpropuesta = new EvaluarPropuesta(str_EvaluarPropuesta);
-		/* solicitd */ Cmpnnt_EvaluarPropuesta cmpntEvaluarPropuesta = new Cmpnnt_EvaluarPropuesta(evaluarpropuesta);
+		/* solicitd */ Cmpnnt_EvaluarEquipo cmpntEvaluarEquipo = new Cmpnnt_EvaluarEquipo(str_EvaluarEquipo);		
+		/* solicitd */ Cmpnnt_EvaluarPropuesta cmpntEvaluarPropuesta = new Cmpnnt_EvaluarPropuesta(str_EvaluarPropuesta);
 		
 		
 		/* llamador */ cntrol.setComando(0, cmpntEvaluarEquipo);

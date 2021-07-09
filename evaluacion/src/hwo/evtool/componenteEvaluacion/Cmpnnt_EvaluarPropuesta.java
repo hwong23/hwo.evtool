@@ -7,9 +7,9 @@ public class Cmpnnt_EvaluarPropuesta implements Comando {
 	EvaluarPropuesta propuesta;
 	String nombre;
 	
-	public Cmpnnt_EvaluarPropuesta (EvaluarPropuesta receptor) {
+	public Cmpnnt_EvaluarPropuesta (String[] str_EvaluarPropuesta) {
 		this.nombre = "EvaluacionPropuesta";
-		this.propuesta = receptor;
+		this.propuesta = new EvaluarPropuesta(str_EvaluarPropuesta);
 	}
 
 	@Override
