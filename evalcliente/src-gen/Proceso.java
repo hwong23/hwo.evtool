@@ -12,9 +12,8 @@ public class Proceso {
 	protected void run() {
 		Control cntrol = new Control ();
 		
-		/* solicitd */ Cmpnnt_EvaluarEquipo cmpntEvaluarEquipo = new Cmpnnt_EvaluarEquipo(str_EvaluarEquipo);		
+		/* solicitd */ Cmpnnt_EvaluarEquipo cmpntEvaluarEquipo = new Cmpnnt_EvaluarEquipo(str_EvaluarEquipo);
 		/* solicitd */ Cmpnnt_EvaluarPropuesta cmpntEvaluarPropuesta = new Cmpnnt_EvaluarPropuesta(str_EvaluarPropuesta);
-		
 		
 		/* llamador */ cntrol.setComando(0, cmpntEvaluarEquipo);
 		/* llamador */ cntrol.setComando(1, cmpntEvaluarPropuesta);
