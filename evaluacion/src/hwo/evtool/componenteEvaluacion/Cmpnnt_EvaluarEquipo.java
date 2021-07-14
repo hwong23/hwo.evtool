@@ -1,7 +1,7 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.receptor.evaluacion.EvaluarEquipo;
+import hwo.evtool.propuesta.EvaluarEquipo;
 
 
 public class Cmpnnt_EvaluarEquipo implements Comando {
