@@ -3,8 +3,8 @@ eventos
 	eFin evento001
 
 comandos 
-	EvaluarProblema = 1 / 4 : "Compilado1" 
-	Evaluar = 1 / 2 : "comentario eval propuesta"
+	EvaluarPropuesta = 1 / 4 : "Compilado1" 
+	EvaluarEquipo = 1 / 2 : "comentario eval propuesta"
 	EvaluarArquitecto = 1 / 4 : "Compilado1"
 	
 state 
