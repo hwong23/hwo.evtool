@@ -1,9 +1,9 @@
-package hwo.evtool.receptor.evaluacion;
+package hwo.evtool.propuesta;
 
 import java.util.Arrays;
+import hwo.evtool.propuesta.problema.*;
+import hwo.evtool.propuesta.tecnica.*;
 
-
-import hwo.evtool.propuesta.EvaluarPropuestaCompleta;
 
 public class EvaluarPropuesta {
 	String descripcion = "Evaluar propuesta";
@@ -22,8 +22,10 @@ public class EvaluarPropuesta {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 			Arrays.toString(this.evalData));
 		
-		/* item-criterios */ EvaluarPropuestaCompleta evalPropuesta = new EvaluarPropuestaCompleta(evalData);
-
-		return evalPropuesta.evaluar();
+		/* item-criterios */ EvaluarProblema evalProblema = new EvaluarProblema(evalData);
+		/* item-criterios */ EvaluarTecnica evalTecnica = new EvaluarTecnica(evalData);
+		
+		
+		return evalProblema.evaluar()+evalTecnica.evaluar();
 	 }
 }

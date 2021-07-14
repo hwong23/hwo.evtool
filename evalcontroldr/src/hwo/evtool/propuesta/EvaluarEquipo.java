@@ -1,7 +1,7 @@
-package hwo.evtool.receptor.evaluacion;
+package hwo.evtool.propuesta;
+
 
 import java.util.Arrays;
-
 import hwo.evtool.equipo.arquitecto.*;
 import hwo.evtool.equipo.director.*;
 import hwo.evtool.equipo.educacion.*;

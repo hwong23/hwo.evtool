@@ -3,18 +3,17 @@ eventos
 	eFin evento001
 
 comandos 
-	EvaluarEquipo = 1 / 4 : "Compilado1" 
-	EvaluarPropuestaOff = "2.10" : "Comentario2"
-	EvaluarPropuesta = 1 / 2 : "comentario eval ropuesta"  
+	EvaluarPropuesta = 1 / 4 : "Compilado1" 
+	EvaluarEquipo = 1 / 2 : "comentario eval propuesta"
+	EvaluarArquitecto = 1 / 4 : "Compilado1"
 	
 state 
-	Evaluado 
+	Equipo
 
 state
-	Init actions {
+	Propuesta actions {
 		EvaluarEquipo
 		EvaluarPropuesta
 	} 
-	eEvaluar => Evaluado 
+	eEvaluar => Equipo 
 	
-
