@@ -4,20 +4,23 @@ eventos
 	eFin evento001
 
 evaluaciones 
-	EvaluarPropuesta = 1 / 4 : "Compilado1" 
-	EvaluarEquipo = 1 / 2 : "comentario eval propuesta"
+	EvaluarProblema = 1 / 4 : "Compilado1" 
+	EvaluarTecnica = 1 / 2 : "comentario eval propuesta"
 	EvaluarArquitecto = 1 / 4 : "Compilado1"
+	EvaluarDirector = 1 / 4 : "Compilado1"
 
 
 componente 
 	Propuesta actions {
-		EvaluarPropuesta
+		EvaluarProblema
+		EvaluarTecnica
 	}
 	eEvaluar => Equipo
 	
 componente
 	Equipo actions {
-		EvaluarEquipo
+		EvaluarArquitecto
+		EvaluarDirector
 	} 
 	eEquipo => Fin 
 	

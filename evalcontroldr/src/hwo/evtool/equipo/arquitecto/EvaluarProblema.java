@@ -2,7 +2,7 @@ package hwo.evtool.equipo.arquitecto;
 
 import hwo.evtool.evaluacion.Evaluacion;
 
-public class EvaluarArquitecto {
+public class EvaluarProblema {
 
 
 	public double evaluar() {

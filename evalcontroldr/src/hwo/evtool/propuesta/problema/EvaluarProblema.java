@@ -1,22 +1,33 @@
 package hwo.evtool.propuesta.problema;
 
-import hwo.evtool.evaluacion.Evaluacion;
+
+import java.util.Arrays;
+import hwo.evtool.propuesta.problema.*;
+
 
 public class EvaluarProblema {
-	String[] edata;
-	
-	public EvaluarProblema(String[] evalData) {
-		this.edata = evalData;
+	public EvaluarProblema(String[] str_EvaluarEquipo) {
+		super();
+		this.evalData = str_EvaluarEquipo;
+	}
+
+	String descripcion = "Evaluar problema";
+	String[] evalData;
+
+	public String[] getEvalData() {
+		return this.evalData;
+	}
+
+	public String getDescription() {
+		return descripcion;
 	}
 
 	public double evaluar () {
-		/* compont */ Evaluacion evalPropuesta = new CriterioEvaluacionProblema(edata);
-		/* decordr */ evalPropuesta = new CriterioEvaluacionPropuestaProblema(evalPropuesta);
+		System.out.println("--- " + this.descripcion + " ---con datos: " +
+			Arrays.toString(this.evalData));
 		
-		System.out.println (evalPropuesta.getDescription()
-			+ " $" + evalPropuesta.cost());
-		
-		return evalPropuesta.cost();
-	}
-}
+		/* item-criterios */ EvaluarProblema evalProblema = new EvaluarProblema(evalData);
 
+		return evalProblema.evaluar();
+	 }
+}

@@ -1,23 +1,32 @@
 package hwo.evtool.propuesta.tecnica;
 
-import hwo.evtool.evaluacion.Evaluacion;
+
+import java.util.Arrays;
+
 
 public class EvaluarTecnica {
-	String[] edata;
+	public EvaluarTecnica(String[] str_EvaluarTecnica) {
+		super();
+		this.evalData = str_EvaluarTecnica;
+	}
 
-	public EvaluarTecnica(String[] evalData) {
-		// TODO Auto-generated constructor stub
-		this.edata = evalData;
+	String descripcion = "Evaluar técnica";
+	String[] evalData;
+
+	public String[] getEvalData() {
+		return this.evalData;
+	}
+
+	public String getDescription() {
+		return descripcion;
 	}
 
 	public double evaluar () {
-		/* compont */ Evaluacion evalPropuesta = new CriterioEvaluacionTecnica(edata);
-		/* decordr */ evalPropuesta = new CriterioEvaluacionPropuestaTecnica(evalPropuesta);
+		System.out.println("--- " + this.descripcion + " ---con datos: " +
+			Arrays.toString(this.evalData));
 		
-		System.out.println (evalPropuesta.getDescription()
-			+ " $" + evalPropuesta.cost());
-		
-		return evalPropuesta.cost();
-	}
+		/* item-criterios */ EvaluarTecnica evalTecnica = new EvaluarTecnica(evalData);
 
+		return evalTecnica.evaluar();
+	 }
 }

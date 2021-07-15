@@ -4,14 +4,14 @@ import hwo.evtool.comando.Comando;
 import hwo.evtool.propuesta.problema.EvaluarProblema;
 
 
-public class Cmpnnt_EvaluarEquipo implements Comando {
+public class Cmpnnt_EvaluarProblema implements Comando {
 	String nombre;
 	/* receptor */ EvaluarProblema problema;
 	
-	public Cmpnnt_EvaluarEquipo (String[] str_EvaluarEquipo) {
+	public Cmpnnt_EvaluarProblema (String[] str_EvaluarProblema) {
 		 
-		this.nombre = "EvaluacionEquipo";
-		this.problema = new EvaluarProblema(str_EvaluarEquipo);
+		this.nombre = "EvaluacionProblema";
+		this.problema = new EvaluarProblema(str_EvaluarProblema);
 	}
 
 	@Override
