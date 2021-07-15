@@ -6,9 +6,9 @@ import hwo.evtool.propuesta.problema.*;
 
 
 public class EvaluarProblema {
-	public EvaluarProblema(String[] str_EvaluarEquipo) {
+	public EvaluarProblema(String[] str_EvaluarProblema) {
 		super();
-		this.evalData = str_EvaluarEquipo;
+		this.evalData = str_EvaluarProblema;
 	}
 
 	String descripcion = "Evaluar problema";
