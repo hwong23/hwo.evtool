@@ -13,12 +13,12 @@ public class Propuesta {
 		Control cntrol = new Control ();
 		
 		/* solicitd */ Cmpnnt_EvaluarProblema cmpntEvaluarProblema = new Cmpnnt_EvaluarProblema(str_EvaluarProblema);
-		/* solicitd */ // Cmpnnt_EvaluarTecnica cmpntEvaluarTecnica = new Cmpnnt_EvaluarTecnica(str_EvaluarTecnica);
+		/* solicitd */ Cmpnnt_EvaluarTecnica cmpntEvaluarTecnica = new Cmpnnt_EvaluarTecnica(str_EvaluarTecnica);
 		
 		/* llamador */ cntrol.setComando(0, cmpntEvaluarProblema);
-		/* llamador */ // cntrol.setComando(1, cmpntEvaluarTecnica);
+		/* llamador */ cntrol.setComando(1, cmpntEvaluarTecnica);
 
 		cntrol.llamarEvaluacion1(0);
-//		cntrol.llamarEvaluacion1(1);
+		cntrol.llamarEvaluacion1(1);
 	}
 }

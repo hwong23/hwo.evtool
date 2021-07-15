@@ -2,6 +2,7 @@ package hwo.evtool.propuesta.tecnica;
 
 
 import java.util.Arrays;
+import hwo.evtool.evaluacion.Evaluacion;
 
 
 public class EvaluarTecnica {
@@ -25,8 +26,9 @@ public class EvaluarTecnica {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 			Arrays.toString(this.evalData));
 		
-		/* item-criterios */ EvaluarTecnica evalTecnica = new EvaluarTecnica(evalData);
+		/* compont */ Evaluacion evalTecnica = new CriterioEvaluacionTecnica (evalData);
+		/* decordr */ evalTecnica = new CriterioEvaluacionPropuestaTecnica (evalTecnica);
 
-		return evalTecnica.evaluar();
+		return evalTecnica.cost();
 	 }
 }

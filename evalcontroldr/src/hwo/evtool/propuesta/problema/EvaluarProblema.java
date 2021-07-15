@@ -2,7 +2,7 @@ package hwo.evtool.propuesta.problema;
 
 
 import java.util.Arrays;
-import hwo.evtool.propuesta.problema.*;
+import hwo.evtool.evaluacion.Evaluacion;
 
 
 public class EvaluarProblema {
@@ -26,8 +26,10 @@ public class EvaluarProblema {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 			Arrays.toString(this.evalData));
 		
-		/* item-criterios */ EvaluarProblema evalProblema = new EvaluarProblema(evalData);
+		/* compont */ Evaluacion evalProblema = new CriterioEvaluacionProblema (evalData);
+		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (evalProblema);
 
-		return evalProblema.evaluar();
+
+		return evalProblema.cost();
 	 }
 }
