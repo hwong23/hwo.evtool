@@ -1,19 +1,25 @@
 eventos
 	eEvaluar evento000
+	eEquipo evento000
 	eFin evento001
 
-comandos 
+evaluaciones 
 	EvaluarPropuesta = 1 / 4 : "Compilado1" 
 	EvaluarEquipo = 1 / 2 : "comentario eval propuesta"
 	EvaluarArquitecto = 1 / 4 : "Compilado1"
-	
-state 
-	Equipo
 
-state
+
+componente 
 	Propuesta actions {
-		EvaluarEquipo
 		EvaluarPropuesta
-	} 
-	eEvaluar => Equipo 
+	}
+	eEvaluar => Equipo
 	
+componente
+	Equipo actions {
+		EvaluarEquipo
+	} 
+	eEquipo => Fin 
+	
+componente
+	Fin
