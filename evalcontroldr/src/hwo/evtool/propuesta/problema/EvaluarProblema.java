@@ -5,7 +5,7 @@ import java.util.Arrays;
 import hwo.evtool.evaluacion.Evaluacion;
 
 
-public class EvaluarProblema {
+/* contrldr */ public class EvaluarProblema {
 	public EvaluarProblema(String[] str_EvaluarProblema) {
 		super();
 		this.evalData = str_EvaluarProblema;
