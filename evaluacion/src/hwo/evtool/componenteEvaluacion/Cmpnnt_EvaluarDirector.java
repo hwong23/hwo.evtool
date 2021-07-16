@@ -7,10 +7,10 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 	String nombre;
 	/* receptor */ EvaluarDirector director;
 	
-	public Cmpnnt_EvaluarDirector (String[] str_EvaluarArq) {
+	public Cmpnnt_EvaluarDirector (String[] str_EvaluarDir) {
 		 
-		this.nombre = "EvaluacionEquipo";
-		this.director = new EvaluarDirector (str_EvaluarArq);
+		this.nombre = "EvaluacionDirector";
+		this.director = new EvaluarDirector (str_EvaluarDir);
 	}
 
 	@Override
@@ -20,5 +20,4 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 		System.out.println(this.director.getDescription()
 				+ " $" + this.director.evaluar());
 	}
-
 }

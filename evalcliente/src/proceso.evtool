@@ -6,8 +6,8 @@ eventos
 evaluaciones 
 	EvaluarProblema = 1 / 4 : "Compilado1" 
 	EvaluarTecnica = 1 / 2 : "comentario eval propuesta"
-	EvaluarArquitecto = 1 / 4 : "Compilado1"
-	EvaluarDirector = 1 / 4 : "Compilado1"
+	EvaluarArquitecto = 3 / 4 : "Compilado1"
+	EvaluarDirector = 4 / 4 : "Compilado1"
 
 
 componente 
