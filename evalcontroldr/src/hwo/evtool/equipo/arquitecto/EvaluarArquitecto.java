@@ -10,6 +10,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 	
 	public EvaluarArquitecto(String[] str_EvaluarArq) {
 		// TODO Auto-generated constructor stub
+		evalData = str_EvaluarArq;
 	}
 
 	public String getDescription() {
@@ -20,7 +21,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 				Arrays.toString(this.evalData));
 
-		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto();
+		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto(evalData);
 		/* decordr */ evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
 		/* decordr */ evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
 		/* decordr */ evalArquitecto = new CriterioMaestria (evalArquitecto);
