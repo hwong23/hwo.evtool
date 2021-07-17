@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/PropuestaBid.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/runtime-EclipseApplication/ev/src-gen/PropuestaBid.java</locationURI>
+		</link>
+		<link>
+			<name>src/prop1.evtool</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/runtime-EclipseApplication/ev/prop1.evtool</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
