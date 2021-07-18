@@ -9,7 +9,6 @@ public class Cmpnnt_EvaluarTecnica implements Comando {
 	/* receptor */ EvaluarTecnica tecnica;
 	
 	public Cmpnnt_EvaluarTecnica (String[] str_EvaluarEquipo) {
-		 
 		this.nombre = "EvaluacionTecnica";
 		this.tecnica = new EvaluarTecnica(str_EvaluarEquipo);
 	}
