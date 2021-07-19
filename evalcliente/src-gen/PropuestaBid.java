@@ -12,8 +12,10 @@ public class PropuestaBid {
 	protected void run() {
 		Control cntrol = new Control ();
 		
+		hwo.evtool.dsl.evaluacion.impl.ProptConstantImpl
 		/* solicitd */ Cmpnnt_EvaluarTecnica cmpntEvaluarTecnica = new Cmpnnt_EvaluarTecnica(str_EvaluarTecnica);
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntEvaluarProblemax = new Cmpnnt_EvaluarProblema(str_EvaluarProblemax);
+		hwo.evtool.dsl.evaluacion.impl.ProptConstantImpl
+		/* solicitd */ Cmpnnt_EvaluarProblemax cmpntEvaluarProblemax = new Cmpnnt_EvaluarProblemax(str_EvaluarProblemax);
 		
 		/* llamador */ cntrol.setComando(0, cmpntEvaluarTecnica);
 		/* llamador */ cntrol.setComando(1, cmpntEvaluarProblemax);

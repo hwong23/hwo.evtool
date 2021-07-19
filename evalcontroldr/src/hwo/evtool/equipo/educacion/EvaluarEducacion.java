@@ -2,19 +2,17 @@ package hwo.evtool.equipo.educacion;
 
 import java.util.Arrays;
 
+import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
-public class EvaluarEducacion {
-	String descripcion = "Evaluar educaciÃ³n";
-	String[] evalData;
-	
+public class EvaluarEducacion extends ControlEvaluacion {
 	public EvaluarEducacion(String[] str_EvaluarEduc) {
-		// TODO Auto-generated constructor stub
-		evalData = str_EvaluarEduc;
+		super(str_EvaluarEduc);
+		this.descripcion = "Evaluar educación";
 	}
 
 
-	public double evaluar() {
+	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 				Arrays.toString(this.evalData));
 		
@@ -25,10 +23,5 @@ public class EvaluarEducacion {
 	
 
 		return evalEducacion.cost();
-	}
-
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return descripcion;
 	}
 }

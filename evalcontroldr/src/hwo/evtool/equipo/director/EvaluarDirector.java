@@ -2,23 +2,16 @@ package hwo.evtool.equipo.director;
 
 import java.util.Arrays;
 
+import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
-public class EvaluarDirector {
-	String descripcion = "Evaluar director";
-	String[] evalData;
-
+public class EvaluarDirector extends ControlEvaluacion {
 	public EvaluarDirector(String[] str_EvaluarDir) {
-		// TODO Auto-generated constructor stub
-		evalData = str_EvaluarDir;
+		super(str_EvaluarDir);
+		this.descripcion = "Evaluar director";
 	}
 
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return descripcion;
-	}
-
-	public double evaluar() {
+	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 				Arrays.toString(this.evalData));
 		
