@@ -30,5 +30,4 @@ public class EvaluarDirector {
 		
 		return evalDirector.cost();
 	}
-
 }

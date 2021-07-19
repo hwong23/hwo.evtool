@@ -8,7 +8,6 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 	/* receptor */ EvaluarDirector director;
 	
 	public Cmpnnt_EvaluarDirector (String[] str_EvaluarDir) {
-		 
 		this.nombre = "EvaluacionDirector";
 		this.director = new EvaluarDirector (str_EvaluarDir);
 	}
