@@ -2,27 +2,19 @@ package hwo.evtool.propuesta.tecnica;
 
 
 import java.util.Arrays;
+
+import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 
-public class EvaluarTecnica {
+public class EvaluarTecnica extends ControlEvaluacion {
 	public EvaluarTecnica(String[] str_EvaluarTecnica) {
-		super();
-		this.evalData = str_EvaluarTecnica;
+		super(str_EvaluarTecnica);
+		this.descripcion = "Evaluar Tecnica (nueva evalc.)";
 	}
 
-	String descripcion = "Evaluar técnica";
-	String[] evalData;
-
-	public String[] getEvalData() {
-		return this.evalData;
-	}
-
-	public String getDescription() {
-		return descripcion;
-	}
-
-	public double evaluar () {
+	@Override
+	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 			Arrays.toString(this.evalData));
 		
