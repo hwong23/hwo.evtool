@@ -6,7 +6,7 @@ public class Control {
 	Comando[] estantes;
 	
 	public Control () {
-		estantes = new Comando[2];
+		estantes = new Comando[10];
 	}
 	
 	public void setComando (int idx, Comando cmd) {
