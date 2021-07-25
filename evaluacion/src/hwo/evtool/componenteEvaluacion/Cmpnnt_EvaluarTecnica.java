@@ -14,10 +14,13 @@ public class Cmpnnt_EvaluarTecnica implements Comando {
 	}
 
 	@Override
-	public void ejecutar() {
-		System.out.println("--- Comando " + this.nombre + " ---");
+	public double ejecutar() {
+		double costo = this.tecnica.evaluar();
 		
+		System.out.println("--- Comando " + this.nombre + " ---");
 		System.out.println(this.tecnica.getDescription()
 				+ " $" + this.tecnica.evaluar());
+		
+		return costo;
 	}
 }

@@ -3,6 +3,8 @@ package hwo.evtool.ejecucion;
 import hwo.evtool.comando.Comando;
 
 public class Control {
+	double total = 0;
+
 	Comando[] estantes;
 	
 	public Control () {
@@ -14,7 +16,10 @@ public class Control {
 	}
 	
 	public void llamarEvaluacion1 (int idx) {
-		this.estantes[idx].ejecutar();
+		total += this.estantes[idx].ejecutar();
 	}
 
+	public double getTotal() {
+		return total;
+	}
 }

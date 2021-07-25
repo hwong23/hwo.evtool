@@ -13,10 +13,13 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 	}
 
 	@Override
-	public void ejecutar() {
-		System.out.println("--- Comando " + this.nombre + " ---");
+	public double ejecutar() {
+		double costo = this.director.evaluar();
 		
+		System.out.println("--- Comando " + this.nombre + " ---");
 		System.out.println(this.director.getDescription()
 				+ " $" + this.director.evaluar());
+		
+		return costo;
 	}
 }

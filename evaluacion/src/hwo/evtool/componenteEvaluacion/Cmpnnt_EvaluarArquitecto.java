@@ -13,10 +13,13 @@ public class Cmpnnt_EvaluarArquitecto implements Comando {
 	}
 
 	@Override
-	public void ejecutar() {
-		System.out.println("--- Comando " + this.nombre + " ---");
+	public double ejecutar() {
+		double costo = this.arquitecto.evaluar();
 		
+		System.out.println("--- Comando " + this.nombre + " ---");
 		System.out.println(this.arquitecto.getDescription()
-				+ " $" + this.arquitecto.evaluar());
+				+ " $" + costo);
+		
+		return costo;
 	}
 }

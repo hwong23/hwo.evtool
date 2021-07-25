@@ -15,10 +15,13 @@ public class Cmpnnt_EvaluarProblema implements Comando {
 	}
 
 	@Override
-	public void ejecutar() {
-		System.out.println("--- Comando " + this.nombre + " ---");
+	public double ejecutar() {
+		double costo = this.problema.evaluar();
 		
+		System.out.println("--- Comando " + this.nombre + " ---");
 		System.out.println(this.problema.getDescription()
 				+ " $" + this.problema.evaluar());
+		
+		return costo;
 	}
 }

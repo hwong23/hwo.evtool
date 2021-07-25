@@ -14,11 +14,14 @@ public class Cmpnnt_EvaluarEducacion implements Comando {
 	}
 
 	@Override
-	public void ejecutar() {
-		System.out.println("--- Comando " + this.nombre + " ---");
+	public double ejecutar() {
+		double costo = this.educacion.evaluar();
 		
+		System.out.println("--- Comando " + this.nombre + " ---");
 		System.out.println(this.educacion.getDescription()
 				+ " $" + this.educacion.evaluar());
+		
+		return costo;
 	}
 
 }
