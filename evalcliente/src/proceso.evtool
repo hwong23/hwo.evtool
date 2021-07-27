@@ -1,0 +1,21 @@
+evaluaciones
+	EvaluarProblema probCriterio1 calificacion : A 
+	EvaluarProblema probCriterio2 calificacion : B
+	EvaluarTecnica tecnCriterio1 calificacion : B
+	EvaluarArquitecto arqHWO calificacion : 1 / 2
+	EvaluarDirector dirHWO calificacion : 1 / 2
+	EvaluarEducacion eduHWO calificacion : 1 / 2
+
+
+
+componente Propuesta actions {
+		probCriterio1
+		probCriterio2
+		tecnCriterio1
+	}
+
+componente Equipo actions {
+		arqHWO
+		dirHWO
+		eduHWO
+	}
