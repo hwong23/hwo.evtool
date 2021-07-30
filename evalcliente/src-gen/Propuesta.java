@@ -2,9 +2,9 @@ import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.ejecucion.Control;
 
 public class Propuesta {
-		String[] str_probCriterio1 = {"probCriterio1","EvaluarProblema", "A","CalificarPropuesta"};
-		String[] str_probCriterio2 = {"probCriterio2","EvaluarProblema", "B","CalificarPropuesta"};
-		String[] str_tecnCriterio1 = {"tecnCriterio1","EvaluarTecnica", "B","CalificarPropuesta"};
+		String[] str_probCriterio1 = {"probCriterio1", "criterio 1/:A","criterio 11/:A","criterio 1111/:A", "CalificarPropuesta"};
+		String[] str_probCriterio2 = {"probCriterio2", "criterio 2/:A", "CalificarPropuesta"};
+		String[] str_tecnCriterio1 = {"tecnCriterio1", "criterio 3/:B", "CalificarPropuesta"};
 
 	public static void main(String[] args) {
 		new Propuesta().run();
