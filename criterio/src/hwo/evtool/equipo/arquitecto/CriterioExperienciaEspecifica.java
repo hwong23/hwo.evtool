@@ -11,7 +11,7 @@ class CriterioExperienciaEspecifica extends CriterioEvaluacion {
 	}
 
 	public String getDescription() {
-		return evaluar.getDescription() + ", Experiencia específica";
+		return evaluar.getDescription() + ", Experiencia especifica";
 	}
 
 	public double cost() {

@@ -9,7 +9,7 @@ import hwo.evtool.control.evaluacion.*;
 /* contrldr */ public class EvaluarProblema extends ControlEvaluacion {
 	public EvaluarProblema(String[] str_EvaluarProblema) {
 		super(str_EvaluarProblema);
-		this.descripcion = "Evaluar problema (nueva evalc.)";
+		this.descripcion = "(contrldr) Evaluar problema (nueva evalc.)";
 	}
 
 	@Override

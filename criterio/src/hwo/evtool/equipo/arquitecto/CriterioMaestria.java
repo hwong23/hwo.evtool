@@ -11,7 +11,7 @@ class CriterioMaestria extends CriterioEvaluacion {
 	}
 
 	public String getDescription() {
-		return evaluar.getDescription() + ", Maestría/Doctorado";
+		return evaluar.getDescription() + ", Maestria/Doctorado";
 	}
 
 	public double cost() {

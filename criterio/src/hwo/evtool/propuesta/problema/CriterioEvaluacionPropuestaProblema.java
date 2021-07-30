@@ -15,10 +15,6 @@ class CriterioEvaluacionPropuestaProblema extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-//		return Evaluacion.edata[1].equals("S") ? 0 :  
-//			Double.parseDouble(Evaluacion.edata[1]) / 
-//			Double.parseDouble(Evaluacion.edata[2]) + 
-//			evaluar.cost();
 		return Evaluacion.edata[2].equals("A") ? 3.0 : 1.5;
 	}
 }

@@ -2,9 +2,9 @@ import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.ejecucion.Control;
 
 public class Equipo {
-		String[] str_arqHWO = {"arqHWO", EvaluarArquitecto", "1", "2", "3 "CalificarEquipo"};
-		String[] str_dirHWO = {"dirHWO", EvaluarDirector", "4", "5", "6 "CalificarEquipo"};
-		String[] str_eduHWO = {"eduHWO", EvaluarEducacion", "8", "7", "9 "CalificarEquipo"};
+		String[] str_arqHWO = {"arqHWO", "EvaluarArquitecto", "1", "2", "3", "CalificarEquipo"};
+		String[] str_dirHWO = {"dirHWO", "EvaluarDirector", "4", "5", "6", "CalificarEquipo"};
+		String[] str_eduHWO = {"eduHWO", "EvaluarEducacion", "8", "7", "9", "CalificarEquipo"};
 
 	public static void main(String[] args) {
 		new Equipo().run();

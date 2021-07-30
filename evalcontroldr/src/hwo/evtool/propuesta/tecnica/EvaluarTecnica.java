@@ -10,7 +10,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 public class EvaluarTecnica extends ControlEvaluacion {
 	public EvaluarTecnica(String[] str_EvaluarTecnica) {
 		super(str_EvaluarTecnica);
-		this.descripcion = "Evaluar Tecnica (nueva evalc.)";
+		this.descripcion = "(contrldr) Evaluar Tecnica (nueva evalc.)";
 	}
 
 	@Override
