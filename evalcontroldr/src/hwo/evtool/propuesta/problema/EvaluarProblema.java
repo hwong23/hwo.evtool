@@ -17,7 +17,8 @@ import hwo.evtool.control.evaluacion.*;
 				Arrays.toString(this.evalData));
 			
 		/* compont */ Evaluacion evalProblema = new CriterioEvaluacionProblema (evalData);
-		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (evalProblema);
+		/* adaptdr */ Evaluacion adaptevalProblema = new AdaptadorCriterioProblema (evalProblema); 
+		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (adaptevalProblema);
 
 
 		return evalProblema.cost();
