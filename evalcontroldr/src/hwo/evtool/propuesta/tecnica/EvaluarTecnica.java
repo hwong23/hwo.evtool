@@ -23,4 +23,4 @@ public class EvaluarTecnica extends ControlEvaluacion {
 
 		return evalTecnica.cost();
 	 }
-}
+	}

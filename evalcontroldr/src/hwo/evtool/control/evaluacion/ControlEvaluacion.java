@@ -26,5 +26,4 @@ package hwo.evtool.control.evaluacion;
 		double puntaje = llamarCriteriosEvaluacion();
 		return hk_redondearPuntaje(puntaje);
 	}
-
 }

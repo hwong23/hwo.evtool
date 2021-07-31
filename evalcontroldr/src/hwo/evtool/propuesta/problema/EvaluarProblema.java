@@ -1,6 +1,5 @@
 package hwo.evtool.propuesta.problema;
 
-
 import java.util.Arrays;
 import hwo.evtool.evaluacion.Evaluacion;
 import hwo.evtool.control.evaluacion.*;
