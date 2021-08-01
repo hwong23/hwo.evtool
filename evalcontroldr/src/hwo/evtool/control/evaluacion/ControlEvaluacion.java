@@ -6,7 +6,7 @@ package hwo.evtool.control.evaluacion;
 
 	public ControlEvaluacion(String[] str_EvaluarArq) {
 		// TODO Auto-generated constructor stub
-		evalData = str_EvaluarArq;
+		this.evalData = str_EvaluarArq;
 	}
 
 	private double hk_redondearPuntaje(double puntaje) {
@@ -16,6 +16,8 @@ package hwo.evtool.control.evaluacion;
 
 	// metodos abstractos
 	protected abstract double llamarCriteriosEvaluacion();
+	protected abstract String[] escribirDataEvaluacion(String[] evalData);
+	
 
 	// metodos finales
 	final public String getDescription() {
@@ -23,6 +25,7 @@ package hwo.evtool.control.evaluacion;
 	}
 
 	final public double evaluar() {
+		this.evalData = escribirDataEvaluacion(this.evalData);
 		double puntaje = llamarCriteriosEvaluacion();
 		return hk_redondearPuntaje(puntaje);
 	}

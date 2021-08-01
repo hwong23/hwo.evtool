@@ -17,10 +17,15 @@ import hwo.evtool.control.evaluacion.*;
 				Arrays.toString(this.evalData));
 			
 		/* compont */ Evaluacion evalProblema = new CriterioEvaluacionProblema (evalData);
-		/* adaptdr */ Evaluacion adaptevalProblema = new AdaptadorCriterioProblema (evalProblema); 
-		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (adaptevalProblema);
+		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (evalProblema);
 
 
 		return evalProblema.cost();
+	}
+
+	@Override
+	protected String[] escribirDataEvaluacion(String[] evalData) {
+		AdaptadorCriterioProblema adptr = new AdaptadorCriterioProblema();
+		return adptr.escribirEvaluacion(evalData);
 	}
 }

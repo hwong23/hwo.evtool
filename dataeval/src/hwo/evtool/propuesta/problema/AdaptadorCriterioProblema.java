@@ -1,21 +1,22 @@
 package hwo.evtool.propuesta.problema;
+import hwo.evtool.dataeval.agente.DataEvaluacion;
 
-import hwo.evtool.evaluacion.Evaluacion;
-
-public class AdaptadorCriterioProblema extends Evaluacion {
-	Evaluacion criterioProblema;
+public class AdaptadorCriterioProblema implements DataEvaluacion {
+	String[] dataProblema = {"0","1","2","3","4","5"};
+	String name; 
 	
-	public AdaptadorCriterioProblema(Evaluacion evalProblema) {
-		// TODO Auto-generated constructor stub
-		super();
-		this.criterioProblema = evalProblema;
+	public AdaptadorCriterioProblema() {
+		this.name = "AdaptadorCriterioProblema";
 	}
-
 
 	@Override
-	public double cost() {
+	public void leerEvaluacion() {
 		// TODO Auto-generated method stub
-		return 0;
+		
 	}
 
+	@Override
+	public String[] escribirEvaluacion(String[] dataeval) {
+		return dataProblema; 
+	}
 }
