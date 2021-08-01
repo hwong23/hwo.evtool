@@ -1,4 +1,5 @@
 package hwo.evtool.propuesta.tecnica;
+
 import hwo.evtool.dataeval.DataEvaluacion;
 
 class AdaptadorCriterioTecnica implements DataEvaluacion {

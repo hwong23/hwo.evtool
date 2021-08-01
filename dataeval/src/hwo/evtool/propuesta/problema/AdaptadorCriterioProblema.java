@@ -1,4 +1,5 @@
 package hwo.evtool.propuesta.problema;
+
 import hwo.evtool.dataeval.DataEvaluacion;
 
 class AdaptadorCriterioProblema implements DataEvaluacion {
@@ -20,3 +21,4 @@ class AdaptadorCriterioProblema implements DataEvaluacion {
 		return dataProblema; 
 	}
 }
+
