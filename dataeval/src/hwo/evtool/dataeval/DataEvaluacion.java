@@ -1,4 +1,4 @@
-package hwo.evtool.dataeval.agente;
+package hwo.evtool.dataeval;
 
 public interface DataEvaluacion {
 	void leerEvaluacion ();

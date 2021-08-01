@@ -2,10 +2,8 @@ package hwo.evtool.propuesta.tecnica;
 
 
 import java.util.Arrays;
-
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
-import hwo.evtool.propuesta.problema.AdaptadorCriterioProblema;
 
 
 public class EvaluarTecnica extends ControlEvaluacion {
@@ -27,6 +25,7 @@ public class EvaluarTecnica extends ControlEvaluacion {
 	
 	@Override
 	protected String[] escribirDataEvaluacion(String[] evalData) {
-		return evalData;
+		AdaptadorCriterioTecnica cr = new AdaptadorCriterioTecnica();
+		return cr.escribirEvaluacion(evalData);
 	}
 }

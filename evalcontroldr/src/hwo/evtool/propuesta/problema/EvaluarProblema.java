@@ -25,6 +25,7 @@ import hwo.evtool.control.evaluacion.*;
 
 	@Override
 	protected String[] escribirDataEvaluacion(String[] evalData) {
+		
 		AdaptadorCriterioProblema adptr = new AdaptadorCriterioProblema();
 		return adptr.escribirEvaluacion(evalData);
 	}
