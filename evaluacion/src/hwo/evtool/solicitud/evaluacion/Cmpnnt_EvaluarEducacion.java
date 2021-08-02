@@ -1,4 +1,4 @@
-package hwo.evtool.componenteEvaluacion;
+package hwo.evtool.solicitud.evaluacion;
 
 import hwo.evtool.comando.Comando;
 import hwo.evtool.criterio.educacion.EvaluarEducacion;

@@ -1,5 +1,5 @@
-import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.llamador.Llamador;
+import hwo.evtool.solicitud.evaluacion.*;
 
 public class Equipo {
 		String[] str_arqHWO = {"arqHWO", "EvaluarArquitecto", "1", "2", "3", "CalificarEquipo"};
