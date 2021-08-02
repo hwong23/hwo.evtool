@@ -6,6 +6,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="src-gen/|src-gen/" kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/criterios"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
