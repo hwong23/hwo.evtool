@@ -1,25 +1,25 @@
 package hwo.evtool.solicitud;
 
 import hwo.evtool.comando.Comando;
+<<<<<<< HEAD:evaluacion/src/hwo/evtool/solicitud/Cmpnnt_EvaluarTecnica.java
 import hwo.evtool.criterio.tecnica.EvaluarTecnica;
 import hwo.evtool.dataeval.AdaptadorCriterioTecnica;
+=======
+import hwo.evtool.propuesta.tecnica.EvaluarTecnica;
+>>>>>>> parent of dbebb80 (adaptador --6):evaluacion/src/hwo/evtool/componenteEvaluacion/Cmpnnt_EvaluarTecnica.java
 
 
 public class Cmpnnt_EvaluarTecnica implements Comando {
 	String nombre;
-	String[] evaldata;
 	/* receptor */ EvaluarTecnica tecnica;
 	
-	public Cmpnnt_EvaluarTecnica (String[] dataeval) {
+	public Cmpnnt_EvaluarTecnica (String[] str_EvaluarEquipo) {
 		this.nombre = "EvaluacionTecnica";
-		this.evaldata = dataeval;
+		this.tecnica = new EvaluarTecnica(str_EvaluarEquipo);
 	}
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ evaldata = new AdaptadorCriterioTecnica().escribirEvaluacion(this.evaldata);
-		this.tecnica = new EvaluarTecnica(this.evaldata);
-
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.tecnica.evaluar();
 		System.out.println(this.tecnica.getDescription()

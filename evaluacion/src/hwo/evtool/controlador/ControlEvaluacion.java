@@ -16,6 +16,7 @@ package hwo.evtool.controlador;
 
 	// metodos abstractos
 	protected abstract double llamarCriteriosEvaluacion();
+	protected abstract String[] escribirDataEvaluacion(String[] evalData);
 	
 
 	// metodos finales
@@ -24,6 +25,7 @@ package hwo.evtool.controlador;
 	}
 
 	final public double evaluar() {
+		this.evalData = escribirDataEvaluacion(this.evalData);
 		double puntaje = llamarCriteriosEvaluacion();
 		return hk_redondearPuntaje(puntaje);
 	}

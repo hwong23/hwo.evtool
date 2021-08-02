@@ -15,7 +15,7 @@ public class Llamador {
 		this.estantes[idx] = cmd;
 	}
 	
-	public void llamarEvaluacion (int idx) {
+	public void llamarEvaluacion1 (int idx) {
 		total += this.estantes[idx].ejecutar();
 	}
 

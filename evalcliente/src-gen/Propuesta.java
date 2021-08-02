@@ -22,9 +22,9 @@ public class Propuesta {
 		/* llamador */ cntrol.setComando(1, cmpntprobCriterio2);
 		/* llamador */ cntrol.setComando(2, cmpnttecnCriterio1);
 
-		cntrol.llamarEvaluacion(0);
-		cntrol.llamarEvaluacion(1);
-		cntrol.llamarEvaluacion(2);
+		cntrol.llamarEvaluacion1(0);
+		cntrol.llamarEvaluacion1(1);
+		cntrol.llamarEvaluacion1(2);
 		
 		System.out.println("--- Total " + cntrol.getTotal());
 	}
