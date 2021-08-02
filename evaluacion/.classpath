@@ -7,6 +7,5 @@
 	</classpathentry>
 	<classpathentry excluding="src-gen/|src-gen/" kind="src" path="src"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/evalcontroldr"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/dataeval"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
