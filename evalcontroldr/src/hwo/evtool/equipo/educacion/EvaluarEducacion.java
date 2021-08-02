@@ -24,9 +24,4 @@ public class EvaluarEducacion extends ControlEvaluacion {
 
 		return evalEducacion.cost();
 	}
-	
-	@Override
-	protected String[] escribirDataEvaluacion(String[] evalData) {
-		return evalData;
-	}
 }

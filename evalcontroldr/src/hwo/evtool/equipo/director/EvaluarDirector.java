@@ -23,9 +23,4 @@ public class EvaluarDirector extends ControlEvaluacion {
 		
 		return evalDirector.cost();
 	}
-	
-	@Override
-	protected String[] escribirDataEvaluacion(String[] evalData) {
-		return evalData;
-	}
 }

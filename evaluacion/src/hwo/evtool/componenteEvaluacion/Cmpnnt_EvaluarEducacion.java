@@ -1,23 +1,27 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
+import hwo.evtool.dataeval.AdaptadorCriterioEducacion;
 import hwo.evtool.equipo.educacion.EvaluarEducacion;
+
 
 public class Cmpnnt_EvaluarEducacion implements Comando {
 	String nombre;
+	String[] evaldata;
 	/* receptor */ EvaluarEducacion educacion;
 	
-	public Cmpnnt_EvaluarEducacion (String[] str_EvaluarEduc) {
-		 
+	public Cmpnnt_EvaluarEducacion (String[] dataeval) {
 		this.nombre = "EvaluacionEducacion";
-		this.educacion = new EvaluarEducacion (str_EvaluarEduc);
+		this.evaldata = dataeval;
 	}
 
 	@Override
 	public double ejecutar() {
-		double costo = this.educacion.evaluar();
+		/* adaptadr */ evaldata = new AdaptadorCriterioEducacion().escribirEvaluacion(this.evaldata);
+		this.educacion = new EvaluarEducacion (this.evaldata);
 		
 		System.out.println("--- Comando " + this.nombre + " ---");
+		double costo = this.educacion.evaluar();
 		System.out.println(this.educacion.getDescription()
 				+ " $" + this.educacion.evaluar());
 		

@@ -23,9 +23,4 @@ import hwo.evtool.evaluacion.Evaluacion;
 		
 		return evalArquitecto.cost();
 	}
-	
-	@Override
-	protected String[] escribirDataEvaluacion(String[] evalData) {
-		return evalData;
-	}
 }

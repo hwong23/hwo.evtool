@@ -15,7 +15,7 @@ public class Control {
 		this.estantes[idx] = cmd;
 	}
 	
-	public void llamarEvaluacion1 (int idx) {
+	public void llamarEvaluacion (int idx) {
 		total += this.estantes[idx].ejecutar();
 	}
 

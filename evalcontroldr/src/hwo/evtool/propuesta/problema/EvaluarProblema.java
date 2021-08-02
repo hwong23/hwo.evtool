@@ -6,8 +6,8 @@ import hwo.evtool.control.evaluacion.*;
 
 
 /* contrldr */ public class EvaluarProblema extends ControlEvaluacion {
-	public EvaluarProblema(String[] str_EvaluarProblema) {
-		super(str_EvaluarProblema);
+	public EvaluarProblema(String[] evaldata) {
+		super(evaldata);
 		this.descripcion = "(contrldr) Evaluar problema (nueva evalc.)";
 	}
 
@@ -21,12 +21,5 @@ import hwo.evtool.control.evaluacion.*;
 
 
 		return evalProblema.cost();
-	}
-
-	@Override
-	protected String[] escribirDataEvaluacion(String[] evalData) {
-		
-		AdaptadorCriterioProblema adptr = new AdaptadorCriterioProblema();
-		return adptr.escribirEvaluacion(evalData);
 	}
 }

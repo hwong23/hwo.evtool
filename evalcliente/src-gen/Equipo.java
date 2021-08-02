@@ -22,9 +22,9 @@ public class Equipo {
 		/* llamador */ cntrol.setComando(1, cmpntdirHWO);
 		/* llamador */ cntrol.setComando(2, cmpnteduHWO);
 
-		cntrol.llamarEvaluacion1(0);
-		cntrol.llamarEvaluacion1(1);
-		cntrol.llamarEvaluacion1(2);
+		cntrol.llamarEvaluacion(0);
+		cntrol.llamarEvaluacion(1);
+		cntrol.llamarEvaluacion(2);
 		
 		System.out.println("--- Total " + cntrol.getTotal());
 	}
