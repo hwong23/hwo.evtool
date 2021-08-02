@@ -1,5 +1,5 @@
 import hwo.evtool.llamador.Llamador;
-import hwo.evtool.solicitud.evaluacion.*;
+import hwo.evtool.solicitud.*;
 
 public class Propuesta {
 		String[] str_probCriterio1 = {"probCriterio1", "criterio 1/:A","criterio 11/:B","criterio 1111/:M", "CalificarPropuesta"};

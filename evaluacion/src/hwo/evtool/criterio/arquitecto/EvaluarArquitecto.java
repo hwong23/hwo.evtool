@@ -20,6 +20,7 @@ import hwo.evtool.criterio.evaluacion.Evaluacion;
 		/* decordr */ evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
 		/* decordr */ evalArquitecto = new CriterioMaestria (evalArquitecto);
 		
+		
 		return evalArquitecto.cost();
 	}
 }

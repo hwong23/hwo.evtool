@@ -1,4 +1,4 @@
-package hwo.evtool.solicitud.evaluacion;
+package hwo.evtool.solicitud;
 
 import hwo.evtool.comando.Comando;
 import hwo.evtool.criterio.director.EvaluarDirector;
