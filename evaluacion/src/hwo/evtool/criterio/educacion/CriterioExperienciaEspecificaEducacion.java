@@ -1,4 +1,4 @@
-package hwo.evtool.equipo.educacion;
+package hwo.evtool.criterio.educacion;
 
 import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;

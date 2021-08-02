@@ -1,4 +1,4 @@
-package hwo.evtool.equipo.director;
+package hwo.evtool.criterio.director;
 
 import java.util.Arrays;
 

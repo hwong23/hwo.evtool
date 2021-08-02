@@ -1,4 +1,4 @@
-package hwo.evtool.propuesta.tecnica;
+package hwo.evtool.criterio.tecnica;
 
 
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package hwo.evtool.propuesta.problema;
+package hwo.evtool.criterio.problema;
 
 import java.util.Arrays;
 import hwo.evtool.evaluacion.Evaluacion;

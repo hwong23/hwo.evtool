@@ -1,8 +1,8 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
+import hwo.evtool.criterio.director.EvaluarDirector;
 import hwo.evtool.dataeval.AdaptadorCriterioDirector;
-import hwo.evtool.equipo.director.EvaluarDirector;
 
 
 public class Cmpnnt_EvaluarDirector implements Comando {

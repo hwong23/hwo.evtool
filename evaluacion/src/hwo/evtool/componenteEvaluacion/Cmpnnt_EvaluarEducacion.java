@@ -1,8 +1,8 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
+import hwo.evtool.criterio.educacion.EvaluarEducacion;
 import hwo.evtool.dataeval.AdaptadorCriterioEducacion;
-import hwo.evtool.equipo.educacion.EvaluarEducacion;
 
 
 public class Cmpnnt_EvaluarEducacion implements Comando {

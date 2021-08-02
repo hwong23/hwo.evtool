@@ -1,8 +1,8 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
+import hwo.evtool.criterio.problema.EvaluarProblema;
 import hwo.evtool.dataeval.AdaptadorCriterioProblema;
-import hwo.evtool.propuesta.problema.EvaluarProblema;
 
 
 public class Cmpnnt_EvaluarProblema implements Comando {

@@ -1,4 +1,4 @@
-package hwo.evtool.propuesta.problema;
+package hwo.evtool.criterio.problema;
 
 import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;

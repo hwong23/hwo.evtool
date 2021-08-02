@@ -1,8 +1,8 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
+import hwo.evtool.criterio.tecnica.EvaluarTecnica;
 import hwo.evtool.dataeval.AdaptadorCriterioTecnica;
-import hwo.evtool.propuesta.tecnica.EvaluarTecnica;
 
 
 public class Cmpnnt_EvaluarTecnica implements Comando {

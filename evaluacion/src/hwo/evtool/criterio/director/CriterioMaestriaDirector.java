@@ -1,4 +1,4 @@
-package hwo.evtool.equipo.director;
+package hwo.evtool.criterio.director;
 
 import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;

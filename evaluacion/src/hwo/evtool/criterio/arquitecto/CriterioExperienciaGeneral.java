@@ -1,12 +1,12 @@
-package hwo.evtool.equipo.director;
+package hwo.evtool.criterio.arquitecto;
 
 import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
-class CriterioExperienciaGeneralDirector extends CriterioEvaluacion {
+class CriterioExperienciaGeneral extends CriterioEvaluacion {
 	Evaluacion evaluar;
 
-	public CriterioExperienciaGeneralDirector(Evaluacion evaluar) {
+	public CriterioExperienciaGeneral(Evaluacion evaluar) {
 		this.evaluar = evaluar;
 	}
 
@@ -15,6 +15,6 @@ class CriterioExperienciaGeneralDirector extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return .40 + evaluar.cost();
+		return .30 + evaluar.cost();
 	}
 }

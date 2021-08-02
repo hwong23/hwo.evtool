@@ -1,8 +1,8 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
+import hwo.evtool.criterio.arquitecto.EvaluarArquitecto;
 import hwo.evtool.dataeval.AdaptadorCriterioArquitecto;
-import hwo.evtool.equipo.arquitecto.EvaluarArquitecto;
 
 
 public class Cmpnnt_EvaluarArquitecto implements Comando {

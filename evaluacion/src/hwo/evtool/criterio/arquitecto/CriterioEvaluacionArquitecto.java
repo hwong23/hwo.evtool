@@ -1,4 +1,4 @@
-package hwo.evtool.equipo.arquitecto;
+package hwo.evtool.criterio.arquitecto;
 
 import hwo.evtool.evaluacion.Evaluacion;
 
