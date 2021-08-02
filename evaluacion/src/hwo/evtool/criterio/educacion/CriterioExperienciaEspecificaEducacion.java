@@ -1,7 +1,7 @@
 package hwo.evtool.criterio.educacion;
 
-import hwo.evtool.evaluacion.CriterioEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.criterio.evaluacion.CriterioEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 class CriterioExperienciaEspecificaEducacion extends CriterioEvaluacion {
 	Evaluacion evaluar;

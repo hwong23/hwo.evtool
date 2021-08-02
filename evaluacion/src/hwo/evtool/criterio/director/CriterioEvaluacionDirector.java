@@ -1,6 +1,6 @@
 package hwo.evtool.criterio.director;
 
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 class CriterioEvaluacionDirector extends Evaluacion {
 	public CriterioEvaluacionDirector(String[] evalData) {

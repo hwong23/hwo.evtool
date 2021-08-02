@@ -1,8 +1,9 @@
 package hwo.evtool.criterio.problema;
 
 import java.util.Arrays;
-import hwo.evtool.evaluacion.Evaluacion;
-import hwo.evtool.control.evaluacion.*;
+
+import hwo.evtool.controlador.*;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 
 /* contrldr */ public class EvaluarProblema extends ControlEvaluacion {

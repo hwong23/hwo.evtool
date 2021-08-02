@@ -1,5 +1,5 @@
 import hwo.evtool.componenteEvaluacion.*;
-import hwo.evtool.ejecucion.Control;
+import hwo.evtool.llamador.Llamador;
 
 public class Equipo {
 		String[] str_arqHWO = {"arqHWO", "EvaluarArquitecto", "1", "2", "3", "CalificarEquipo"};
@@ -12,7 +12,7 @@ public class Equipo {
 	}
 	
 	protected void run() {
-		Control cntrol = new Control ();
+		Llamador cntrol = new Llamador ();
 		
 		/* solicitd */ Cmpnnt_EvaluarArquitecto cmpntarqHWO = new Cmpnnt_EvaluarArquitecto(str_arqHWO);
 		/* solicitd */ Cmpnnt_EvaluarDirector cmpntdirHWO = new Cmpnnt_EvaluarDirector(str_dirHWO);

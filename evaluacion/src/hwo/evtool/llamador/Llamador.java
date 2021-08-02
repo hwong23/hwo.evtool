@@ -1,13 +1,13 @@
-package hwo.evtool.ejecucion;
+package hwo.evtool.llamador;
 
 import hwo.evtool.comando.Comando;
 
-public class Control {
+public class Llamador {
 	double total = 0;
 
 	Comando[] estantes;
 	
-	public Control () {
+	public Llamador () {
 		estantes = new Comando[10];
 	}
 	

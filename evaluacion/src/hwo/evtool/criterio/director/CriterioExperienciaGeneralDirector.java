@@ -1,7 +1,7 @@
 package hwo.evtool.criterio.director;
 
-import hwo.evtool.evaluacion.CriterioEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.criterio.evaluacion.CriterioEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 class CriterioExperienciaGeneralDirector extends CriterioEvaluacion {
 	Evaluacion evaluar;

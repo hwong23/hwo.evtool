@@ -1,5 +1,5 @@
 import hwo.evtool.componenteEvaluacion.*;
-import hwo.evtool.ejecucion.Control;
+import hwo.evtool.llamador.Llamador;
 
 public class Propuesta {
 		String[] str_probCriterio1 = {"probCriterio1", "criterio 1/:A","criterio 11/:B","criterio 1111/:M", "CalificarPropuesta"};
@@ -12,7 +12,7 @@ public class Propuesta {
 	}
 	
 	protected void run() {
-		Control cntrol = new Control ();
+		Llamador cntrol = new Llamador ();
 		
 		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprobCriterio1 = new Cmpnnt_EvaluarProblema(str_probCriterio1);
 		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprobCriterio2 = new Cmpnnt_EvaluarProblema(str_probCriterio2);

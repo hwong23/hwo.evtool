@@ -2,8 +2,8 @@ package hwo.evtool.criterio.director;
 
 import java.util.Arrays;
 
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.controlador.ControlEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 public class EvaluarDirector extends ControlEvaluacion {
 	public EvaluarDirector(String[] str_EvaluarDir) {

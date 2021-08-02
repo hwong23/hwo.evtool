@@ -2,8 +2,8 @@ package hwo.evtool.criterio.educacion;
 
 import java.util.Arrays;
 
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.controlador.ControlEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 public class EvaluarEducacion extends ControlEvaluacion {
 	public EvaluarEducacion(String[] str_EvaluarEduc) {

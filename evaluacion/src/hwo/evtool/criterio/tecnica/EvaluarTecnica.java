@@ -2,8 +2,9 @@ package hwo.evtool.criterio.tecnica;
 
 
 import java.util.Arrays;
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+
+import hwo.evtool.controlador.ControlEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 
 public class EvaluarTecnica extends ControlEvaluacion {

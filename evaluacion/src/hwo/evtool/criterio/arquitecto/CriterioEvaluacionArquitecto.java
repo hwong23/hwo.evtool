@@ -1,6 +1,6 @@
 package hwo.evtool.criterio.arquitecto;
 
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 class CriterioEvaluacionArquitecto extends Evaluacion {
 	public CriterioEvaluacionArquitecto(String[] evalData) {

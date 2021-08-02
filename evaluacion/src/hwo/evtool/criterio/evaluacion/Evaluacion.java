@@ -1,4 +1,4 @@
-package hwo.evtool.evaluacion;
+package hwo.evtool.criterio.evaluacion;
 
 public abstract class Evaluacion {
 	public String description = "Unknown Evaluacion";

@@ -1,9 +1,8 @@
 package hwo.evtool.criterio.arquitecto;
 
 import java.util.Arrays;
-
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.controlador.ControlEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 /* contrldr */ public class EvaluarArquitecto extends ControlEvaluacion {
 	public EvaluarArquitecto(String[] str_EvaluarArq) {

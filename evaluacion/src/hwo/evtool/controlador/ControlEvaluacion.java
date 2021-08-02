@@ -1,4 +1,4 @@
-package hwo.evtool.control.evaluacion;
+package hwo.evtool.controlador;
 
 /* plntlla */ public abstract class ControlEvaluacion {
 	protected String descripcion = "Control evaluaion";

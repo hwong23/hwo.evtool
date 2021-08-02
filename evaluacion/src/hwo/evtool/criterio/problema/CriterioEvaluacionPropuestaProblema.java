@@ -1,7 +1,7 @@
 package hwo.evtool.criterio.problema;
 
-import hwo.evtool.evaluacion.CriterioEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
+import hwo.evtool.criterio.evaluacion.CriterioEvaluacion;
+import hwo.evtool.criterio.evaluacion.Evaluacion;
 
 class CriterioEvaluacionPropuestaProblema extends CriterioEvaluacion {
 	Evaluacion evaluar;
