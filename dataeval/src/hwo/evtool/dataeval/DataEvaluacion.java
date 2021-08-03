@@ -1,7 +1,9 @@
 package hwo.evtool.dataeval;
 
+import java.util.HashMap;
+
 public interface DataEvaluacion {
 	void leerEvaluacion ();
-	String[] escribirEvaluacion (String[] dataeval);
+	HashMap<String, String> escribirEvaluacion (String[] dataeval);
 }
 

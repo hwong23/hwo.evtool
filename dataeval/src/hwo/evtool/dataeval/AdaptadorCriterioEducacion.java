@@ -1,7 +1,9 @@
 package hwo.evtool.dataeval;
 
+import java.util.HashMap;
+
 public class AdaptadorCriterioEducacion implements DataEvaluacion {
-	String[] dataProblema = {"/5","/4","/3","/2","/1","/0"};
+	HashMap<String, String> dataProblema = new HashMap<String, String>();
 	String name; 
 	
 	public AdaptadorCriterioEducacion() {
@@ -15,7 +17,7 @@ public class AdaptadorCriterioEducacion implements DataEvaluacion {
 	}
 
 	@Override
-	public String[] escribirEvaluacion(String[] dataeval) {
+	public HashMap<String, String> escribirEvaluacion(String[] dataeval) {
 		return dataProblema; 
 	}
 }
