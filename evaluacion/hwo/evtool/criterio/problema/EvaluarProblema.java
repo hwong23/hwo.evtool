@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import hwo.evtool.controlador.*;
 import hwo.evtool.criterio.evaluacion.Evaluacion;
+import hwo.evtool.dataeval.AdaptadorCriterioProblema;
 
 
 /* contrldr */ public class EvaluarProblema extends ControlEvaluacion {

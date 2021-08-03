@@ -1,12 +1,7 @@
 package hwo.evtool.solicitud;
 
 import hwo.evtool.comando.Comando;
-<<<<<<< HEAD:evaluacion/src/hwo/evtool/solicitud/Cmpnnt_EvaluarDirector.java
 import hwo.evtool.criterio.director.EvaluarDirector;
-import hwo.evtool.dataeval.AdaptadorCriterioDirector;
-=======
-import hwo.evtool.equipo.director.EvaluarDirector;
->>>>>>> parent of dbebb80 (adaptador --6):evaluacion/src/hwo/evtool/componenteEvaluacion/Cmpnnt_EvaluarDirector.java
 
 public class Cmpnnt_EvaluarDirector implements Comando {
 	String nombre;

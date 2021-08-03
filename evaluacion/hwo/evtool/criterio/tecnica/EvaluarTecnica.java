@@ -2,15 +2,9 @@ package hwo.evtool.criterio.tecnica;
 
 
 import java.util.Arrays;
-<<<<<<< HEAD:evaluacion/src/hwo/evtool/criterio/tecnica/EvaluarTecnica.java
-
 import hwo.evtool.controlador.ControlEvaluacion;
 import hwo.evtool.criterio.evaluacion.Evaluacion;
-=======
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.evaluacion.Evaluacion;
-import hwo.evtool.propuesta.tecnica.AdaptadorCriterioTecnica;
->>>>>>> parent of dbebb80 (adaptador --6):evalcontroldr/src/hwo/evtool/propuesta/tecnica/EvaluarTecnica.java
+import hwo.evtool.dataeval.*;
 
 
 public class EvaluarTecnica extends ControlEvaluacion {

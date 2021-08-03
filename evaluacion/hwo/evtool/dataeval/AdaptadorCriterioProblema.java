@@ -1,12 +1,10 @@
-package hwo.evtool.propuesta.tecnica;
+package hwo.evtool.dataeval;
 
-import hwo.evtool.dataeval.DataEvaluacion;
-
-class AdaptadorCriterioTecnica implements DataEvaluacion {
-	String[] dataProblema = {"5","4","3","2","1","0"};
+public class AdaptadorCriterioProblema implements DataEvaluacion {
+	String[] dataProblema = {"0","1","2","3","4","5"};
 	String name; 
 	
-	public AdaptadorCriterioTecnica() {
+	public AdaptadorCriterioProblema() {
 		this.name = "AdaptadorCriterioProblema";
 	}
 
@@ -21,3 +19,4 @@ class AdaptadorCriterioTecnica implements DataEvaluacion {
 		return dataProblema; 
 	}
 }
+
