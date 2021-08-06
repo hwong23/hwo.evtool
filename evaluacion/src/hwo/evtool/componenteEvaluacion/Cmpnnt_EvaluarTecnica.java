@@ -17,8 +17,9 @@ public class Cmpnnt_EvaluarTecnica implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ evaldata = new AdaptadorCriterioTecnica().escribirEvaluacion(this.evaldata);
-		this.tecnica = new EvaluarTecnica(this.evaldata);
+		/* contrldr */ this.tecnica = new EvaluarTecnica(
+		/* adaptadr */ new AdaptadorCriterioTecnica().escribirEvaluacion(this.evaldata)
+		);
 
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.tecnica.evaluar();
