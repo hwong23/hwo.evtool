@@ -1,9 +1,12 @@
 package hwo.evtool.propuesta.problema;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import hwo.evtool.dataeval.DataEvaluacion;
 
 public class AdaptadorCriterioProblema implements DataEvaluacion {
-	String[] dataProblema = {"0","1","2","3","4","5"};
+	Map<String, String> dataProblema = new HashMap<String, String>();
 	String name; 
 	
 	public AdaptadorCriterioProblema() {
@@ -11,13 +14,19 @@ public class AdaptadorCriterioProblema implements DataEvaluacion {
 	}
 
 	@Override
-	public void leerEvaluacion() {
-		// TODO Auto-generated method stub
-		
+	public String leerEvaluacion() {
+		return
+			dataProblema.get("i0") + ", " + 
+			dataProblema.get("i1") + ", " +
+			dataProblema.get("i2");
 	}
 
 	@Override
 	public DataEvaluacion escribirEvaluacion(String[] dataeval) {
+		dataProblema.put("i0", dataeval[0]);
+		dataProblema.put("i1", dataeval[1]);
+		dataProblema.put("i2", dataeval[2]);
+		
 		return this;
 	}
 }

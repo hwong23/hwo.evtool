@@ -1,10 +1,13 @@
 
 package hwo.evtool.propuesta.tecnica;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import hwo.evtool.dataeval.DataEvaluacion;
 
 public class AdaptadorCriterioTecnica implements DataEvaluacion {
-	String[] dataProblema = {"5","4","3","2","1","0"};
+	Map<String, String> dataTecnica = new HashMap<String, String>();
 	String name; 
 	
 	public AdaptadorCriterioTecnica() {
@@ -12,13 +15,19 @@ public class AdaptadorCriterioTecnica implements DataEvaluacion {
 	}
 
 	@Override
-	public void leerEvaluacion() {
-		// TODO Auto-generated method stub
-		
+	public String leerEvaluacion() {
+		return
+			dataTecnica.get("i0") + ", " + 
+			dataTecnica.get("i1") + ", " +
+			dataTecnica.get("i2");
 	}
 
 	@Override
 	public DataEvaluacion escribirEvaluacion(String[] dataeval) {
+		dataTecnica.put("i0", dataeval[0]);
+		dataTecnica.put("i1", dataeval[1]);
+		dataTecnica.put("i2", dataeval[2]);
+
 		return this; 
 	}
 }

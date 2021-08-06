@@ -1,7 +1,7 @@
 package hwo.evtool.dataeval;
 
 public interface DataEvaluacion {
-	void leerEvaluacion ();
+	String leerEvaluacion ();
 	DataEvaluacion escribirEvaluacion (String[] dataeval);
 }
 
