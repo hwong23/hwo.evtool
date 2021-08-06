@@ -14,6 +14,7 @@ class CriterioEvaluacionPropuestaTecnica extends Evaluacion {
 	}
 
 	public double cost() {
-		return Evaluacion.edata[2].equals("A") ? 2.0 : 0.5;
+		return 1.5;	
+//		Evaluacion.edata[2].equals("A") ? 2.0 : 0.5;
 	}
 }
