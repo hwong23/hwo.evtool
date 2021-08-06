@@ -1,12 +1,12 @@
 package hwo.evtool.propuesta.problema;
 
-import java.util.Arrays;
 import hwo.evtool.evaluacion.Evaluacion;
 import hwo.evtool.control.evaluacion.*;
+import hwo.evtool.dataeval.DataEvaluacion;
 
 
 /* contrldr */ public class EvaluarProblema extends ControlEvaluacion {
-	public EvaluarProblema(String[] evaldata) {
+	public EvaluarProblema(DataEvaluacion evaldata) {
 		super(evaldata);
 		this.descripcion = "(contrldr) Evaluar problema (nueva evalc.)";
 	}
@@ -14,7 +14,7 @@ import hwo.evtool.control.evaluacion.*;
 	@Override
 	protected double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-				Arrays.toString(this.evalData));
+				this.evalData.toString());
 			
 		/* compont */ Evaluacion evalProblema = new CriterioEvaluacionProblema (evalData);
 		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (evalProblema);
