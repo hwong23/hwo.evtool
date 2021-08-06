@@ -1,4 +1,6 @@
-package hwo.evtool.dataeval;
+package hwo.evtool.equipo.arquitecto;
+
+import hwo.evtool.dataeval.DataEvaluacion;
 
 public class AdaptadorCriterioArquitecto implements DataEvaluacion {
 	String[] dataProblema = {"-5","-4","-3","-2","-1","-0"};

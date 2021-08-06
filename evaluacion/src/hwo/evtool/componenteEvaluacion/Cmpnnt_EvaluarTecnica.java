@@ -1,7 +1,7 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.dataeval.AdaptadorCriterioTecnica;
+import hwo.evtool.propuesta.tecnica.AdaptadorCriterioTecnica;
 import hwo.evtool.propuesta.tecnica.EvaluarTecnica;
 
 

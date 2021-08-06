@@ -1,7 +1,7 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.dataeval.AdaptadorCriterioEducacion;
+import hwo.evtool.equipo.educacion.AdaptadorCriterioEducacion;
 import hwo.evtool.equipo.educacion.EvaluarEducacion;
 
 

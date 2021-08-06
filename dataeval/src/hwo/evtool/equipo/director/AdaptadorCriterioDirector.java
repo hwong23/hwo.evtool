@@ -1,4 +1,6 @@
-package hwo.evtool.dataeval;
+package hwo.evtool.equipo.director;
+
+import hwo.evtool.dataeval.DataEvaluacion;
 
 public class AdaptadorCriterioDirector implements DataEvaluacion {
 	String[] dataProblema = {"+5","+4","+3","+2","+1","+0"};

@@ -1,7 +1,7 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.dataeval.AdaptadorCriterioDirector;
+import hwo.evtool.equipo.director.AdaptadorCriterioDirector;
 import hwo.evtool.equipo.director.EvaluarDirector;
 
 
