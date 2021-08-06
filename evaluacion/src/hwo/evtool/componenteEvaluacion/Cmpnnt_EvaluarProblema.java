@@ -17,8 +17,8 @@ public class Cmpnnt_EvaluarProblema implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ this.problema = new EvaluarProblema(
-			new AdaptadorCriterioProblema().escribirEvaluacion(evaldata)
+		/* contrldr */ this.problema = new EvaluarProblema(
+		/* adaptadr */ new AdaptadorCriterioProblema().escribirEvaluacion(evaldata)
 		);
 
 		System.out.println("--- Comando " + this.nombre + " ---");
