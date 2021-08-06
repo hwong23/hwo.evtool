@@ -1,12 +1,11 @@
 package hwo.evtool.equipo.educacion;
 
-import java.util.Arrays;
-
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
+import hwo.evtool.dataeval.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 public class EvaluarEducacion extends ControlEvaluacion {
-	public EvaluarEducacion(String[] str_EvaluarEduc) {
+	public EvaluarEducacion(DataEvaluacion str_EvaluarEduc) {
 		super(str_EvaluarEduc);
 		this.descripcion = "Evaluar educación";
 	}
@@ -14,7 +13,7 @@ public class EvaluarEducacion extends ControlEvaluacion {
 
 	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-				Arrays.toString(this.evalData));
+				this.evalData.toString());
 		
 		/* compont */ Evaluacion evalEducacion = new CriterioEvaluacionEducacion();
 		/* decordr */ evalEducacion = new CriterioExperienciaEspecificaEducacion (evalEducacion);

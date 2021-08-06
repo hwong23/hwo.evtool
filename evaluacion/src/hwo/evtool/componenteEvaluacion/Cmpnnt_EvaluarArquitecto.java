@@ -18,7 +18,7 @@ public class Cmpnnt_EvaluarArquitecto implements Comando {
 	@Override
 	public double ejecutar() {
 		/* contrldr */ this.arquitecto = new EvaluarArquitecto (
-		/* adaptadr */ evaldata = new AdaptadorCriterioArquitecto().escribirEvaluacion(this.evaldata)
+		/* adaptadr */ new AdaptadorCriterioArquitecto().escribirEvaluacion(this.evaldata)
 		);
 
 		System.out.println("--- Comando " + this.nombre + " ---");
