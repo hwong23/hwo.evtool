@@ -1,7 +1,6 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.dataeval.DataEvaluacion;
 import hwo.evtool.propuesta.problema.AdaptadorCriterioProblema;
 import hwo.evtool.propuesta.problema.EvaluarProblema;
 
@@ -9,7 +8,7 @@ import hwo.evtool.propuesta.problema.EvaluarProblema;
 public class Cmpnnt_EvaluarProblema implements Comando {
 	String nombre;
 	/* receptor */ EvaluarProblema problema;
-	DataEvaluacion evaldata;
+	String[] evaldata;
 	
 	public Cmpnnt_EvaluarProblema (String[] datadata) {
 		this.nombre = "EvaluacionProblema";
@@ -18,8 +17,9 @@ public class Cmpnnt_EvaluarProblema implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ evaldata = new AdaptadorCriterioProblema().escribirEvaluacion(evaldata);
-		this.problema = new EvaluarProblema(evaldata);
+		/* adaptadr */ this.problema = new EvaluarProblema(
+			new AdaptadorCriterioProblema().escribirEvaluacion(evaldata)
+		);
 
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.problema.evaluar();

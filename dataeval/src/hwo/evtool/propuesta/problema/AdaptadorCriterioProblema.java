@@ -17,8 +17,8 @@ public class AdaptadorCriterioProblema implements DataEvaluacion {
 	}
 
 	@Override
-	public String[] escribirEvaluacion(String[] dataeval) {
-		return dataeval; 
+	public DataEvaluacion escribirEvaluacion(String[] dataeval) {
+		return this;
 	}
 }
 
