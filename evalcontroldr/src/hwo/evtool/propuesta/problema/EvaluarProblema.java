@@ -14,7 +14,7 @@ import hwo.evtool.dataeval.DataEvaluacion;
 	@Override
 	protected double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-				this.evalData.toString());
+				this.evalData.leerEvaluacion());
 			
 		/* compont */ Evaluacion evalProblema = new CriterioEvaluacionProblema (evalData);
 		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (evalProblema);
