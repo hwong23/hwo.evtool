@@ -1,12 +1,13 @@
 package hwo.evtool.propuesta.tecnica;
 
+import hwo.evtool.dataeval.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionTecnica extends Evaluacion {
 	
-	public CriterioEvaluacionTecnica(String[] edata) {
+	public CriterioEvaluacionTecnica(DataEvaluacion evalData) {
 		description = "Evaluar Propuesta";
-		Evaluacion.edata = edata;
+		Evaluacion.edata = evalData;
 	}
 
 	public double cost() {
