@@ -1,11 +1,12 @@
 package hwo.evtool.propuesta.problema;
 
-import hwo.evtool.dataeval.DataEvaluacion;
+import java.util.Map;
+
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionProblema extends Evaluacion {
 	
-	public CriterioEvaluacionProblema(DataEvaluacion evalData) {
+	public CriterioEvaluacionProblema(Map<String, String> evalData) {
 		description = "Evaluar Propuesta";
 		Evaluacion.edata = evalData;
 	}

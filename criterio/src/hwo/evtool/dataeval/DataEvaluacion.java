@@ -4,6 +4,6 @@ import java.util.Map;
 
 public interface DataEvaluacion {
 	String leerEvaluacion ();
-	Map<String, String> escribirEvaluacion (String[] dataeval);
+	Map<String, String> escribirEvaluacion(String[] evaldata);
 }
 

@@ -17,7 +17,7 @@ public class Cmpnnt_EvaluarArquitecto implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioArquitecto adaptd = new AdaptadorCriterioArquitecto(this.evaldata);
+		/* adaptadr */ AdaptadorCriterioArquitecto adaptd = new AdaptadorCriterioArquitecto();
 		///////////////////////////////////////////////////////////////////
 		/* contrldr */ this.arquitecto = new EvaluarArquitecto(adaptd.escribirEvaluacion(evaldata));
 

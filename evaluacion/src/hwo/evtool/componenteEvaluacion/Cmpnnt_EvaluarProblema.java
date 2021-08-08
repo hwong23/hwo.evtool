@@ -17,8 +17,9 @@ public class Cmpnnt_EvaluarProblema implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioProblema adaptd = new AdaptadorCriterioProblema(this.evaldata);
-		/* contrldr */ this.problema = new EvaluarProblema(adaptd);
+		/* adaptadr */ AdaptadorCriterioProblema adaptd = new AdaptadorCriterioProblema();
+		/////////////////////////////////////////////////////////////////
+		/* contrldr */ this.problema = new EvaluarProblema(adaptd.escribirEvaluacion(this.evaldata));
 
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.problema.evaluar();

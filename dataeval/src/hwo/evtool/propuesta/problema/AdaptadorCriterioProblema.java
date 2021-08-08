@@ -9,9 +9,8 @@ public class AdaptadorCriterioProblema implements DataEvaluacion {
 	Map<String, String> dataProblema = new HashMap<String, String>();
 	String name; 
 	
-	public AdaptadorCriterioProblema(String[] evaldata) {
+	public AdaptadorCriterioProblema() {
 		this.name = "AdaptadorCriterioProblema";
-		escribirEvaluacion(evaldata);
 	}
 
 	@Override
@@ -23,10 +22,12 @@ public class AdaptadorCriterioProblema implements DataEvaluacion {
 	}
 
 	@Override
-	public void escribirEvaluacion(String[] dataeval) {
-		dataProblema.put("i0", dataeval[0]);
-		dataProblema.put("i1", dataeval[1]);
-		dataProblema.put("i2", dataeval[2]);
+	public Map<String, String> escribirEvaluacion(String[] evaldata) {
+		dataProblema.put("i0", evaldata[0]);
+		dataProblema.put("i1", evaldata[1]);
+		dataProblema.put("i2", evaldata[2]);
+		
+		return dataProblema;
 	}
 }
 
