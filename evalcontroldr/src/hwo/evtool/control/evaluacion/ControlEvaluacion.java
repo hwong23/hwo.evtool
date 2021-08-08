@@ -6,9 +6,9 @@ import hwo.evtool.dataeval.DataEvaluacion;
 	protected String descripcion = "Control evaluaion";
 	protected DataEvaluacion evalData;
 
-	public ControlEvaluacion(DataEvaluacion evaldata2) {
+	public ControlEvaluacion(DataEvaluacion evaldata) {
 		// TODO Auto-generated constructor stub
-		this.evalData = evaldata2;
+		this.evalData = evaldata;
 	}
 
 	private double hk_redondearPuntaje(double puntaje) {

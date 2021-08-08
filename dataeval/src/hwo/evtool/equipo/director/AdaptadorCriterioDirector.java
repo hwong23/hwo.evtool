@@ -22,7 +22,7 @@ public class AdaptadorCriterioDirector implements DataEvaluacion {
 	}
 
 	@Override
-	public DataEvaluacion escribirEvaluacion(String[] dataeval) {
-		return this; 
+	public void escribirEvaluacion(String[] dataeval) {
+
 	}
 }
