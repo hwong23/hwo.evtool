@@ -1,10 +1,11 @@
 package hwo.evtool.equipo.director;
 
-import hwo.evtool.dataeval.DataEvaluacion;
+import java.util.Map;
+
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionDirector extends Evaluacion {
-	public CriterioEvaluacionDirector(DataEvaluacion evalData) {
+	public CriterioEvaluacionDirector(Map<String, String> evalData) {
 		description = "Evaluar Director";
 		Evaluacion.edata = evalData;
 	}

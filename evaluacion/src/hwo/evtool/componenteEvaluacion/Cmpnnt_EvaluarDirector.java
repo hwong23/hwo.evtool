@@ -17,8 +17,8 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioDirector adaptd = new AdaptadorCriterioDirector(this.evaldata);
-		/* contrldr */ this.director = new EvaluarDirector(adaptd);
+		/* adaptadr */ AdaptadorCriterioDirector adaptd = new AdaptadorCriterioDirector();
+		/* contrldr */ this.director = new EvaluarDirector(adaptd.escribirEvaluacion(evaldata));
 
 		
 		System.out.println("--- Comando " + this.nombre + " ---");

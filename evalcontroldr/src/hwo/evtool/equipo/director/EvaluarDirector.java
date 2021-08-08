@@ -1,11 +1,12 @@
 package hwo.evtool.equipo.director;
 
+import java.util.Map;
+
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.dataeval.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 public class EvaluarDirector extends ControlEvaluacion {
-	public EvaluarDirector(DataEvaluacion str_EvaluarDir) {
+	public EvaluarDirector(Map<String, String> str_EvaluarDir) {
 		super(str_EvaluarDir);
 		this.descripcion = "Evaluar director";
 	}
