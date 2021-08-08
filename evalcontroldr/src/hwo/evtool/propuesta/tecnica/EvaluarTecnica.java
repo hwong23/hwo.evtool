@@ -1,13 +1,15 @@
 package hwo.evtool.propuesta.tecnica;
 
 
+import java.util.Map;
+
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.dataeval.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 
 public class EvaluarTecnica extends ControlEvaluacion {
-	public EvaluarTecnica(DataEvaluacion str_EvaluarTecnica) {
+	public EvaluarTecnica(Map<String, String> str_EvaluarTecnica) {
 		super(str_EvaluarTecnica);
 		this.descripcion = "(contrldr) Evaluar Tecnica (nueva evalc.)";
 	}
