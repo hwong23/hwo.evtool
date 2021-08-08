@@ -17,9 +17,9 @@ public class Cmpnnt_EvaluarEducacion implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* contrldr */ this.educacion = new EvaluarEducacion (
-		/* adaptadr */ new AdaptadorCriterioEducacion().escribirEvaluacion(this.evaldata)
-		);
+		/* adaptadr */ AdaptadorCriterioEducacion adaptd = new AdaptadorCriterioEducacion(this.evaldata);
+		/* contrldr */ this.educacion = new EvaluarEducacion(adaptd);
+
 		
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.educacion.evaluar();

@@ -9,8 +9,9 @@ public class AdaptadorCriterioDirector implements DataEvaluacion {
 	Map<String, String> dataDirector = new HashMap<String, String>();
 	String name; 
 	
-	public AdaptadorCriterioDirector() {
+	public AdaptadorCriterioDirector(String[] evaldata) {
 		this.name = "AdaptadorCriterioDirector";
+		escribirEvaluacion(evaldata);
 	}
 
 	@Override

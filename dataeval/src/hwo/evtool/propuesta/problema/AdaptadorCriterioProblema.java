@@ -16,10 +16,10 @@ public class AdaptadorCriterioProblema implements DataEvaluacion {
 
 	@Override
 	public String leerEvaluacion() {
-		return "HWO";
-//			dataProblema.get("i0") + ", " + 
-//			dataProblema.get("i1") + ", " +
-//			dataProblema.get("i2");
+		return
+			dataProblema.get("i0") + ", " + 
+			dataProblema.get("i1") + ", " +
+			dataProblema.get("i2");
 	}
 
 	@Override
