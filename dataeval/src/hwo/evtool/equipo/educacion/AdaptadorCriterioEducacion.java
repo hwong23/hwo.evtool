@@ -9,9 +9,8 @@ public class AdaptadorCriterioEducacion implements DataEvaluacion {
 	Map<String, String> dataEvaluacion = new HashMap<String, String>();
 	String name; 
 	
-	public AdaptadorCriterioEducacion(String[] evaldata) {
+	public AdaptadorCriterioEducacion() {
 		this.name = "AdaptadorCriterioEducacion";
-		escribirEvaluacion(evaldata);
 	}
 
 	@Override
@@ -23,7 +22,7 @@ public class AdaptadorCriterioEducacion implements DataEvaluacion {
 	}
 
 	@Override
-	public void escribirEvaluacion(String[] dataeval) {
-
+	public Map<String, String> escribirEvaluacion(String[] dataeval) {
+		return dataEvaluacion;
 	}
 }
