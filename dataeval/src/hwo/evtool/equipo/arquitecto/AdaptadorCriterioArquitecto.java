@@ -23,7 +23,11 @@ public class AdaptadorCriterioArquitecto implements DataEvaluacion {
 	}
 
 	@Override
-	public void  escribirEvaluacion(String[] dataeval) {
-
+	public Map<String, String> escribirEvaluacion(String[] dataeval) {
+		dataArquitecto.put("i0", dataeval[0]);
+		dataArquitecto.put("i1", dataeval[1]);
+		dataArquitecto.put("i2", dataeval[2]);
+		
+		return dataArquitecto;
 	}
 }

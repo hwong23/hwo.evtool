@@ -1,10 +1,11 @@
 package hwo.evtool.evaluacion;
 
-import hwo.evtool.dataeval.DataEvaluacion;
+import java.util.Map;
+
 
 public abstract class Evaluacion {
 	public String description = "Unknown Evaluacion";
-	protected static DataEvaluacion edata;
+	protected static Map<String, String> edata;
 
 	public String getDescription() {
 		return description;

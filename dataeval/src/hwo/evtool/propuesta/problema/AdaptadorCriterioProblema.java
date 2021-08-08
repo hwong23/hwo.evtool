@@ -27,7 +27,6 @@ public class AdaptadorCriterioProblema implements DataEvaluacion {
 		dataProblema.put("i0", dataeval[0]);
 		dataProblema.put("i1", dataeval[1]);
 		dataProblema.put("i2", dataeval[2]);
-		
 	}
 }
 

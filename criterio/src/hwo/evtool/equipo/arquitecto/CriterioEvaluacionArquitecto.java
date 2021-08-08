@@ -1,10 +1,11 @@
 package hwo.evtool.equipo.arquitecto;
 
-import hwo.evtool.dataeval.DataEvaluacion;
+import java.util.Map;
+
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionArquitecto extends Evaluacion {
-	public CriterioEvaluacionArquitecto(DataEvaluacion evalData) {
+	public CriterioEvaluacionArquitecto(Map<String, String> evalData) {
 		description = "Evaluar Arquitecto";
 		Evaluacion.edata = evalData;
 	}

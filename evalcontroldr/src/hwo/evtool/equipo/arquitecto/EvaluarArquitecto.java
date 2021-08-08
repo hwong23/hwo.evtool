@@ -1,14 +1,12 @@
 package hwo.evtool.equipo.arquitecto;
 
-import java.util.Arrays;
+import java.util.Map;
 
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.dataeval.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 /* contrldr */ public class EvaluarArquitecto extends ControlEvaluacion {
-	public EvaluarArquitecto(DataEvaluacion str_EvaluarArq) {
-		// TODO Auto-generated constructor stub
+	public EvaluarArquitecto(Map<String, String> str_EvaluarArq) {
 		super(str_EvaluarArq);
 		this.descripcion = "Evaluar arquitecto";
 	}

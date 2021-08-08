@@ -1,14 +1,15 @@
 package hwo.evtool.control.evaluacion;
 
-import hwo.evtool.dataeval.DataEvaluacion;
+import java.util.Map;
+
 
 /* plntlla */ public abstract class ControlEvaluacion {
 	protected String descripcion = "Control evaluaion";
-	protected DataEvaluacion evalData;
+	protected Map<String, String> evalData;
 
-	public ControlEvaluacion(DataEvaluacion evaldata) {
+	public ControlEvaluacion(Map<String, String> str_EvaluarArq) {
 		// TODO Auto-generated constructor stub
-		this.evalData = evaldata;
+		this.evalData = str_EvaluarArq;
 	}
 
 	private double hk_redondearPuntaje(double puntaje) {
