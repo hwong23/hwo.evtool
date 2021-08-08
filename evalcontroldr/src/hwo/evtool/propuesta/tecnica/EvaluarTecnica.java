@@ -4,7 +4,7 @@ package hwo.evtool.propuesta.tecnica;
 import java.util.Map;
 
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
-import hwo.evtool.dataeval.DataEvaluacion;
+import hwo.evtool.dataeval.del.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 

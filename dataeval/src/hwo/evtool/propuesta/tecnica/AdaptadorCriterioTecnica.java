@@ -4,9 +4,7 @@ package hwo.evtool.propuesta.tecnica;
 import java.util.HashMap;
 import java.util.Map;
 
-import hwo.evtool.dataeval.DataEvaluacion;
-
-public class AdaptadorCriterioTecnica implements DataEvaluacion {
+public class AdaptadorCriterioTecnica {
 	Map<String, String> dataTecnica = new HashMap<String, String>();
 	String name; 
 	
@@ -14,7 +12,6 @@ public class AdaptadorCriterioTecnica implements DataEvaluacion {
 		this.name = "AdaptadorCriterioTecnica";
 	}
 
-	@Override
 	public String leerEvaluacion() {
 		return
 			dataTecnica.get("i0") + ", " + 
@@ -22,7 +19,6 @@ public class AdaptadorCriterioTecnica implements DataEvaluacion {
 			dataTecnica.get("i2");
 	}
 
-	@Override
 	public Map<String, String> escribirEvaluacion(String[] dataeval) {
 		dataTecnica.put("i0", dataeval[0]);
 		dataTecnica.put("i1", dataeval[1]);

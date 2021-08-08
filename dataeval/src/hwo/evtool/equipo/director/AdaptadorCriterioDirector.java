@@ -3,9 +3,7 @@ package hwo.evtool.equipo.director;
 import java.util.HashMap;
 import java.util.Map;
 
-import hwo.evtool.dataeval.DataEvaluacion;
-
-public class AdaptadorCriterioDirector implements DataEvaluacion {
+public class AdaptadorCriterioDirector {
 	Map<String, String> dataDirector = new HashMap<String, String>();
 	String name; 
 	
@@ -13,7 +11,6 @@ public class AdaptadorCriterioDirector implements DataEvaluacion {
 		this.name = "AdaptadorCriterioDirector";
 	}
 
-	@Override
 	public String leerEvaluacion() {
 		return
 			dataDirector.get("i0") + ", " + 
@@ -21,7 +18,6 @@ public class AdaptadorCriterioDirector implements DataEvaluacion {
 			dataDirector.get("i2");
 	}
 
-	@Override
 	public Map<String, String> escribirEvaluacion(String[] dataeval) {
 		return dataDirector;
 	}

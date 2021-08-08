@@ -3,9 +3,7 @@ package hwo.evtool.equipo.educacion;
 import java.util.HashMap;
 import java.util.Map;
 
-import hwo.evtool.dataeval.DataEvaluacion;
-
-public class AdaptadorCriterioEducacion implements DataEvaluacion {
+public class AdaptadorCriterioEducacion {
 	Map<String, String> dataEvaluacion = new HashMap<String, String>();
 	String name; 
 	
@@ -13,7 +11,6 @@ public class AdaptadorCriterioEducacion implements DataEvaluacion {
 		this.name = "AdaptadorCriterioEducacion";
 	}
 
-	@Override
 	public String leerEvaluacion() {
 		return 
 			dataEvaluacion.get("i0") + ", " + 
@@ -21,7 +18,6 @@ public class AdaptadorCriterioEducacion implements DataEvaluacion {
 			dataEvaluacion.get("i2");
 	}
 
-	@Override
 	public Map<String, String> escribirEvaluacion(String[] dataeval) {
 		return dataEvaluacion;
 	}

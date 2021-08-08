@@ -2,7 +2,7 @@ package hwo.evtool.propuesta.tecnica;
 
 import java.util.Map;
 
-import hwo.evtool.dataeval.DataEvaluacion;
+import hwo.evtool.dataeval.del.DataEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionTecnica extends Evaluacion {

@@ -3,9 +3,8 @@ package hwo.evtool.equipo.arquitecto;
 import java.util.HashMap;
 import java.util.Map;
 
-import hwo.evtool.dataeval.DataEvaluacion;
 
-public class AdaptadorCriterioArquitecto implements DataEvaluacion {
+public class AdaptadorCriterioArquitecto {
 	Map<String, String> dataArquitecto = new HashMap<String, String>(); 
 	String name; 
 	
@@ -13,7 +12,6 @@ public class AdaptadorCriterioArquitecto implements DataEvaluacion {
 		this.name = "AdaptadorCriterioArquitecto";
 	}
 
-	@Override
 	public String leerEvaluacion() {
 		return
 			dataArquitecto.get("i0") + ", " + 
@@ -21,7 +19,6 @@ public class AdaptadorCriterioArquitecto implements DataEvaluacion {
 			dataArquitecto.get("i2");
 	}
 
-	@Override
 	public Map<String, String> escribirEvaluacion(String[] dataeval) {
 		dataArquitecto.put("i0", dataeval[0]);
 		dataArquitecto.put("i1", dataeval[1]);
