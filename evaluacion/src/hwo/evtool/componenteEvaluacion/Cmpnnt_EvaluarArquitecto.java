@@ -1,7 +1,6 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.equipo.arquitecto.AdaptadorCriterioArquitecto;
 import hwo.evtool.equipo.arquitecto.EvaluarArquitecto;
 
 
@@ -17,9 +16,7 @@ public class Cmpnnt_EvaluarArquitecto implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioArquitecto adaptd = new AdaptadorCriterioArquitecto();
-		///////////////////////////////////////////////////////////////////
-		/* contrldr */ this.arquitecto = new EvaluarArquitecto(adaptd.escribirEvaluacion(evaldata));
+		/* contrldr */ this.arquitecto = new EvaluarArquitecto(this.evaldata);
 
 
 		System.out.println("--- Comando " + this.nombre + " ---");
