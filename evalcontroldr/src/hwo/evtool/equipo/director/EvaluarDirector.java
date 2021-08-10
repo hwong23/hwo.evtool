@@ -1,11 +1,10 @@
 package hwo.evtool.equipo.director;
 
-import java.util.Map;
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 public class EvaluarDirector extends ControlEvaluacion {
-	Map<String, String> evaldata;
+	AdaptadorCriterioDirector adaptdr = new AdaptadorCriterioDirector();
 	
 	public EvaluarDirector(String[] evaldata) {
 		super(evaldata);
@@ -13,8 +12,7 @@ public class EvaluarDirector extends ControlEvaluacion {
 	}
 
 	protected void hk_adaptacion ()  {
-		AdaptadorCriterioDirector adaptdr = new AdaptadorCriterioDirector();
-		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
+		adaptdr.escribirEvaluacion(this.str_evalData);
 	}
 	
 	@Override
@@ -22,7 +20,7 @@ public class EvaluarDirector extends ControlEvaluacion {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 				this.str_evalData.toString());
 		
-		/* compont */ Evaluacion evalDirector = new CriterioEvaluacionDirector(this.evaldata);
+		/* compont */ Evaluacion evalDirector = new CriterioEvaluacionDirector(adaptdr.dataDirector);
 		/* decordr */ evalDirector = new CriterioExperienciaEspecificaDirector (evalDirector);
 		/* decordr */ evalDirector = new CriterioExperienciaGeneralDirector (evalDirector);
 		/* decordr */ evalDirector = new CriterioMaestriaDirector (evalDirector);

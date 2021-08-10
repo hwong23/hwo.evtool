@@ -1,12 +1,10 @@
 package hwo.evtool.equipo.arquitecto;
 
-import java.util.Map;
-
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 /* contrldr */ public class EvaluarArquitecto extends ControlEvaluacion {
-	Map<String, String> evaldata;
+	AdaptadorCriterioArquitecto adaptdr = new AdaptadorCriterioArquitecto();
 	
 	public EvaluarArquitecto(String[] evaldata) {
 		super(evaldata);
@@ -14,8 +12,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 	}
 
 	protected void hk_adaptacion ()  {
-		AdaptadorCriterioArquitecto adaptdr = new AdaptadorCriterioArquitecto();
-		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
+		adaptdr.escribirEvaluacion(this.str_evalData);
 	}
 	
 	@Override
@@ -23,7 +20,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 				this.str_evalData.toString());
 
-		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto(this.evaldata);
+		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto(adaptdr.dataArquitecto);
 		/* decordr */ evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
 		/* decordr */ evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
 		/* decordr */ evalArquitecto = new CriterioMaestria (evalArquitecto);

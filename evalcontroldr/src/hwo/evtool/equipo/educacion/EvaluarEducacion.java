@@ -1,11 +1,10 @@
 package hwo.evtool.equipo.educacion;
 
-import java.util.Map;
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 public class EvaluarEducacion extends ControlEvaluacion {
-	Map<String, String> evaldata;
+	AdaptadorCriterioEducacion adaptdr = new AdaptadorCriterioEducacion();
 	
 	public EvaluarEducacion(String[] evaldata) {
 		super(evaldata);
@@ -14,8 +13,7 @@ public class EvaluarEducacion extends ControlEvaluacion {
 
 
 	protected void hk_adaptacion ()  {
-		AdaptadorCriterioEducacion adaptdr = new AdaptadorCriterioEducacion();
-		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
+		adaptdr.escribirEvaluacion(this.str_evalData);
 	}
 	
 	
@@ -24,7 +22,7 @@ public class EvaluarEducacion extends ControlEvaluacion {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
 				this.str_evalData.toString());
 		
-		/* compont */ Evaluacion evalEducacion = new CriterioEvaluacionEducacion(this.evaldata);
+		/* compont */ Evaluacion evalEducacion = new CriterioEvaluacionEducacion(adaptdr.dataEvaluacion);
 		/* decordr */ evalEducacion = new CriterioExperienciaEspecificaEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioExperienciaGeneralEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioMaestriaEducacion (evalEducacion);
