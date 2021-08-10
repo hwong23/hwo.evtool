@@ -3,7 +3,7 @@ package hwo.evtool.propuesta.problema;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AdaptadorCriterioProblema {
+class AdaptadorCriterioProblema {
 	Map<String, String> dataProblema = new HashMap<String, String>();
 	String name; 
 	

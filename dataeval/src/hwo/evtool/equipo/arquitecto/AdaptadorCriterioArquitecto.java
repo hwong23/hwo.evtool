@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class AdaptadorCriterioArquitecto {
+class AdaptadorCriterioArquitecto {
 	Map<String, String> dataArquitecto = new HashMap<String, String>(); 
 	String name; 
 	

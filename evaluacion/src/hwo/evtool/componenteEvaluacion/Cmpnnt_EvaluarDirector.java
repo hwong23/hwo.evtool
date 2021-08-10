@@ -1,7 +1,6 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.equipo.director.AdaptadorCriterioDirector;
 import hwo.evtool.equipo.director.EvaluarDirector;
 
 
@@ -17,8 +16,7 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioDirector adaptd = new AdaptadorCriterioDirector();
-		/* contrldr */ this.director = new EvaluarDirector(adaptd.escribirEvaluacion(evaldata));
+		/* contrldr */ this.director = new EvaluarDirector(this.evaldata);
 
 		
 		System.out.println("--- Comando " + this.nombre + " ---");

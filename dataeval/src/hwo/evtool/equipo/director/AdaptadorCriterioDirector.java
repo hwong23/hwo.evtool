@@ -3,7 +3,7 @@ package hwo.evtool.equipo.director;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AdaptadorCriterioDirector {
+class AdaptadorCriterioDirector {
 	Map<String, String> dataDirector = new HashMap<String, String>();
 	String name; 
 	

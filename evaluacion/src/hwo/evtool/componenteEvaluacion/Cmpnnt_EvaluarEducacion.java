@@ -1,7 +1,6 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.equipo.educacion.AdaptadorCriterioEducacion;
 import hwo.evtool.equipo.educacion.EvaluarEducacion;
 
 
@@ -17,8 +16,7 @@ public class Cmpnnt_EvaluarEducacion implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioEducacion adaptd = new AdaptadorCriterioEducacion();
-		/* contrldr */ this.educacion = new EvaluarEducacion(adaptd.escribirEvaluacion(evaldata));
+		/* contrldr */ this.educacion = new EvaluarEducacion(this.evaldata);
 
 		
 		System.out.println("--- Comando " + this.nombre + " ---");

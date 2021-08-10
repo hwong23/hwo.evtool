@@ -1,8 +1,6 @@
 package hwo.evtool.propuesta.problema;
 
 import hwo.evtool.evaluacion.Evaluacion;
-import hwo.evtool.propuesta.tecnica.AdaptadorCriterioTecnica;
-
 import java.util.Map;
 import hwo.evtool.control.evaluacion.*;
 
@@ -16,7 +14,7 @@ import hwo.evtool.control.evaluacion.*;
 	}
 
 	private void hk_adaptacion ()  {
-		AdaptadorCriterioTecnica adaptdr = new AdaptadorCriterioTecnica();
+		AdaptadorCriterioProblema adaptdr = new AdaptadorCriterioProblema();
 		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
 	}
 	

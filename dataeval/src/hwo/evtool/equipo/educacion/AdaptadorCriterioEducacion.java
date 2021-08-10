@@ -3,7 +3,7 @@ package hwo.evtool.equipo.educacion;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AdaptadorCriterioEducacion {
+class AdaptadorCriterioEducacion {
 	Map<String, String> dataEvaluacion = new HashMap<String, String>();
 	String name; 
 	

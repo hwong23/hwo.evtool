@@ -16,7 +16,7 @@ public class EvaluarTecnica extends ControlEvaluacion {
 	}
 
 	private void hk_adaptacion ()  {
-		AdaptadorCriterioTecnica adaptdr = new AdaptadorCriterioTecnica();
+		AdaptadorCriterioDirector adaptdr = new AdaptadorCriterioDirector();
 		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
 	}
 	
