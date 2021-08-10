@@ -13,7 +13,7 @@ public class EvaluarEducacion extends ControlEvaluacion {
 	}
 
 
-	private void hk_adaptacion ()  {
+	protected void hk_adaptacion ()  {
 		AdaptadorCriterioEducacion adaptdr = new AdaptadorCriterioEducacion();
 		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
 	}

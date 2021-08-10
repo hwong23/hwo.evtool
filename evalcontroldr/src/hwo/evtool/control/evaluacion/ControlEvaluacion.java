@@ -15,8 +15,8 @@ package hwo.evtool.control.evaluacion;
 		return puntaje;
 	}
 	
-	private void hk_adaptacion ()  {
-		
+	protected void hk_adaptacion () {
+		System.out.println ("super.hk_adaptacion");
 	}
 
 	// metodos abstractos
@@ -28,7 +28,7 @@ package hwo.evtool.control.evaluacion;
 		return descripcion;
 	}
 
-	final public double evaluar() {
+	public double evaluar() {
 		hk_adaptacion ();
 		double puntaje = llamarCriteriosEvaluacion();
 		return hk_redondearPuntaje(puntaje);

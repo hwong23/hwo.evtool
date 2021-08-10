@@ -13,7 +13,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 		this.descripcion = "Evaluar arquitecto";
 	}
 
-	private void hk_adaptacion ()  {
+	protected void hk_adaptacion ()  {
 		AdaptadorCriterioArquitecto adaptdr = new AdaptadorCriterioArquitecto();
 		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
 	}

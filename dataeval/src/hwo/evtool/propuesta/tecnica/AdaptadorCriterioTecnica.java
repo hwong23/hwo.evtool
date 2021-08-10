@@ -4,11 +4,11 @@ package hwo.evtool.propuesta.tecnica;
 import java.util.HashMap;
 import java.util.Map;
 
-class AdaptadorCriterioDirector {
+class AdaptadorCriterioTecnica {
 	Map<String, String> dataTecnica = new HashMap<String, String>();
 	String name; 
 	
-	public AdaptadorCriterioDirector() {
+	public AdaptadorCriterioTecnica() {
 		this.name = "AdaptadorCriterioTecnica";
 	}
 

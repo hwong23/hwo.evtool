@@ -12,7 +12,7 @@ public class EvaluarDirector extends ControlEvaluacion {
 		this.descripcion = "Evaluar director";
 	}
 
-	private void hk_adaptacion ()  {
+	protected void hk_adaptacion ()  {
 		AdaptadorCriterioDirector adaptdr = new AdaptadorCriterioDirector();
 		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
 	}

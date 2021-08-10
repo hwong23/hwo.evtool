@@ -13,7 +13,7 @@ import hwo.evtool.control.evaluacion.*;
 		this.descripcion = "(contrldr) Evaluar problema (nueva evalc.)";
 	}
 
-	private void hk_adaptacion ()  {
+	protected void hk_adaptacion ()  {
 		AdaptadorCriterioProblema adaptdr = new AdaptadorCriterioProblema();
 		this.evaldata = adaptdr.escribirEvaluacion(this.str_evalData);
 	}
