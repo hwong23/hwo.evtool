@@ -1,20 +1,22 @@
 package hwo.evtool.control.evaluacion;
 
-import java.util.Map;
-
 
 /* plntlla */ public abstract class ControlEvaluacion {
 	protected String descripcion = "Control evaluaion";
-	protected Map<String, String> evalData;
+	protected String[] str_evalData;
 
-	public ControlEvaluacion(Map<String, String> str_EvaluarArq) {
+	public ControlEvaluacion(String[] evaldata) {
 		// TODO Auto-generated constructor stub
-		this.evalData = str_EvaluarArq;
+		this.str_evalData = evaldata;
 	}
 
 	private double hk_redondearPuntaje(double puntaje) {
 		// TODO Auto-generated method stub
 		return puntaje;
+	}
+	
+	private void hk_adaptacion ()  {
+		
 	}
 
 	// metodos abstractos
@@ -27,6 +29,7 @@ import java.util.Map;
 	}
 
 	final public double evaluar() {
+		hk_adaptacion ();
 		double puntaje = llamarCriteriosEvaluacion();
 		return hk_redondearPuntaje(puntaje);
 	}

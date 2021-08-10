@@ -1,7 +1,6 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.propuesta.tecnica.AdaptadorCriterioTecnica;
 import hwo.evtool.propuesta.tecnica.EvaluarTecnica;
 
 
@@ -17,8 +16,7 @@ public class Cmpnnt_EvaluarTecnica implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioTecnica adaptd = new AdaptadorCriterioTecnica();
-		/* contrldr */ this.tecnica = new EvaluarTecnica(adaptd.escribirEvaluacion(evaldata));
+		/* contrldr */ this.tecnica = new EvaluarTecnica(evaldata);
 
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.tecnica.evaluar();

@@ -1,7 +1,6 @@
 package hwo.evtool.componenteEvaluacion;
 
 import hwo.evtool.comando.Comando;
-import hwo.evtool.propuesta.problema.AdaptadorCriterioProblema;
 import hwo.evtool.propuesta.problema.EvaluarProblema;
 
 
@@ -17,9 +16,7 @@ public class Cmpnnt_EvaluarProblema implements Comando {
 
 	@Override
 	public double ejecutar() {
-		/* adaptadr */ AdaptadorCriterioProblema adaptd = new AdaptadorCriterioProblema();
-		/////////////////////////////////////////////////////////////////
-		/* contrldr */ this.problema = new EvaluarProblema(adaptd.escribirEvaluacion(this.evaldata));
+		/* contrldr */ this.problema = new EvaluarProblema(this.evaldata);
 
 		System.out.println("--- Comando " + this.nombre + " ---");
 		double costo = this.problema.evaluar();

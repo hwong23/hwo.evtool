@@ -15,9 +15,9 @@ public class EvaluarEducacion extends ControlEvaluacion {
 
 	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-				this.evalData.toString());
+				this.str_evalData.toString());
 		
-		/* compont */ Evaluacion evalEducacion = new CriterioEvaluacionEducacion(evalData);
+		/* compont */ Evaluacion evalEducacion = new CriterioEvaluacionEducacion(str_evalData);
 		/* decordr */ evalEducacion = new CriterioExperienciaEspecificaEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioExperienciaGeneralEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioMaestriaEducacion (evalEducacion);
