@@ -13,16 +13,24 @@ class AdaptadorCriterioTecnica {
 	}
 
 	public String leerEvaluacion() {
-		return
-			dataTecnica.get("i0") + ", " + 
-			dataTecnica.get("i1") + ", " +
-			dataTecnica.get("i2");
+		String str_data;
+
+		str_data = dataTecnica.get("item") + ", ";
+		for (int i = 1; i <= dataTecnica.size() - 2; i++) {
+			str_data += dataTecnica.get("i"+i) + ", ";
+		}
+		str_data += dataTecnica.get("tipo");
+		
+		return str_data;
 	}
 
-	public Map<String, String> escribirEvaluacion(String[] dataeval) {
-		dataTecnica.put("i0", dataeval[0]);
-		dataTecnica.put("i1", dataeval[1]);
-		dataTecnica.put("i2", dataeval[2]);
+	public Map<String, String> escribirEvaluacion(String[] evaldata) {
+		dataTecnica.put("item", evaldata[0]);
+		dataTecnica.put("tipo", evaldata[evaldata.length - 1]);
+		for (int i = 1; i <= evaldata.length - 2; i++) {
+			String[] str_campo = evaldata[i].split("/:"); 
+			dataTecnica.put("i"+i, str_campo[1]);
+		}
 		
 		return dataTecnica;
 	}
