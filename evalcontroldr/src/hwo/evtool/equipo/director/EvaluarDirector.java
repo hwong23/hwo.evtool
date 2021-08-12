@@ -18,7 +18,7 @@ public class EvaluarDirector extends ControlEvaluacion {
 	@Override
 	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-				this.str_evalData.toString());
+				this.adaptdr.leerEvaluacion());
 		
 		/* compont */ Evaluacion evalDirector = new CriterioEvaluacionDirector(adaptdr.dataDirector);
 		/* decordr */ evalDirector = new CriterioExperienciaEspecificaDirector (evalDirector);

@@ -18,7 +18,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 	@Override
 	public double llamarCriteriosEvaluacion () {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-				this.str_evalData.toString());
+				this.adaptdr.leerEvaluacion());
 
 		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto(adaptdr.dataArquitecto);
 		/* decordr */ evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
