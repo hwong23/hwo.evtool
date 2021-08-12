@@ -19,7 +19,7 @@ import hwo.evtool.control.evaluacion.*;
 	@Override
 	protected double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-			"this.evalData.leerEvaluacion()");
+			this.adaptdr.leerEvaluacion());
 			
 		/* compont */ Evaluacion evalProblema = new CriterioEvaluacionProblema (adaptdr.dataProblema);
 		/* decordr */ evalProblema = new CriterioEvaluacionPropuestaProblema (evalProblema);

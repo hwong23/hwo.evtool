@@ -20,7 +20,7 @@ public class EvaluarTecnica extends ControlEvaluacion {
 	@Override
 	public double llamarCriteriosEvaluacion() {
 		System.out.println("--- " + this.descripcion + " ---con datos: " +
-			adaptdr.leerEvaluacion());
+			this.adaptdr.leerEvaluacion());
 		
 		/* compont */ Evaluacion evalTecnica = new CriterioEvaluacionTecnica (adaptdr.dataTecnica);
 		/* decordr */ evalTecnica = new CriterioEvaluacionPropuestaTecnica (evalTecnica);
