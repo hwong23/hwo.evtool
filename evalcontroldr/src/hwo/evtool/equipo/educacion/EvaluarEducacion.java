@@ -11,11 +11,9 @@ public class EvaluarEducacion extends ControlEvaluacion {
 		this.descripcion = "Evaluar educación";
 	}
 
-
 	protected void hk_adaptacion ()  {
 		adaptdr.escribirEvaluacion(this.str_evalData);
 	}
-	
 	
 	@Override
 	public double llamarCriteriosEvaluacion() {
@@ -25,7 +23,7 @@ public class EvaluarEducacion extends ControlEvaluacion {
 		/* compont */ Evaluacion evalEducacion = new CriterioEvaluacionEducacion(adaptdr.dataEducacion);
 		/* decordr */ evalEducacion = new CriterioExperienciaEspecificaEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioExperienciaGeneralEducacion (evalEducacion);
-		/* decordr */ evalEducacion = new CriterioMaestriaEducacion (evalEducacion);
+		/* decordr */ evalEducacion = new CriterioFormacionEducacion (evalEducacion);
 	
 
 		return evalEducacion.cost();

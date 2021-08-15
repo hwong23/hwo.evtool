@@ -23,7 +23,7 @@ public class EvaluarDirector extends ControlEvaluacion {
 		/* compont */ Evaluacion evalDirector = new CriterioEvaluacionDirector(adaptdr.dataDirector);
 		/* decordr */ evalDirector = new CriterioExperienciaEspecificaDirector (evalDirector);
 		/* decordr */ evalDirector = new CriterioExperienciaGeneralDirector (evalDirector);
-		/* decordr */ evalDirector = new CriterioMaestriaDirector (evalDirector);
+		/* decordr */ evalDirector = new CriterioFormacionDirector (evalDirector);
 
 		
 		return evalDirector.cost();

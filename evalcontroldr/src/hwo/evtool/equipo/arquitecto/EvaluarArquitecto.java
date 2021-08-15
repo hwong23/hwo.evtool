@@ -23,7 +23,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 		/* compont */ Evaluacion evalArquitecto = new CriterioEvaluacionArquitecto(adaptdr.dataArquitecto);
 		/* decordr */ evalArquitecto = new CriterioExperienciaEspecifica (evalArquitecto);
 		/* decordr */ evalArquitecto = new CriterioExperienciaGeneral (evalArquitecto);
-		/* decordr */ evalArquitecto = new CriterioMaestria (evalArquitecto);
+		/* decordr */ evalArquitecto = new CriterioFormacion (evalArquitecto);
 		
 		return evalArquitecto.cost();
 	}

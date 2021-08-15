@@ -11,10 +11,12 @@ class CriterioExperienciaEspecificaEducacion extends CriterioEvaluacion {
 	}
 
 	public String getDescription() {
-		return evaluar.getDescription() + ", Experiencia específica";
+		return evaluar.getDescription() + ", Experiencia especifica";
 	}
 
 	public double cost() {
-		return .20 + evaluar.cost();
+		String experiencia = Evaluacion.edata.get("experiencia");
+		double costo = Double.parseDouble(experiencia) * 2;
+		return costo;
 	}
 }

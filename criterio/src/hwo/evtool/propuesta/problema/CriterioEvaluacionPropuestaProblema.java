@@ -15,15 +15,15 @@ class CriterioEvaluacionPropuestaProblema extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		double cost = 0.0;
+		double costo = 0.0;
 		for (int i = 1; i <= Evaluacion.edata.size() - 2; i++) {
 			switch (Evaluacion.edata.get("i"+i)) {
-			case "A" : cost += 1.85;
-			case "M" : cost += 1.2;
-			case "B" : cost += 1.0;
+			case "A" : costo += 1.85;
+			case "M" : costo += 1.2;
+			case "B" : costo += 1.0;
 			}
 		}
 		
-		return cost;	
+		return costo + evaluar.cost();	
 	}
 }
