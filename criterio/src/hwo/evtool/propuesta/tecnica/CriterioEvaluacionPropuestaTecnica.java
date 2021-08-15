@@ -14,7 +14,15 @@ class CriterioEvaluacionPropuestaTecnica extends Evaluacion {
 	}
 
 	public double cost() {
-		return 1.5;	
-//		Evaluacion.edata[2].equals("A") ? 2.0 : 0.5;
+		double cost = 0.0;
+		for (int i = 1; i <= Evaluacion.edata.size() - 2; i++) {
+			switch (Evaluacion.edata.get("i"+i)) {
+			case "A" : cost += 1.5;
+			case "M" : cost += 1.0;
+			case "B" : cost += 0.25;
+			}
+		}
+		
+		return cost;	
 	}
 }
