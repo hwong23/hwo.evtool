@@ -24,6 +24,7 @@ public class EvaluarDirector extends ControlEvaluacion {
 		/* decordr */ evalDirector = new CriterioExperienciaEspecificaDirector (evalDirector);
 		/* decordr */ evalDirector = new CriterioExperienciaGeneralDirector (evalDirector);
 		/* decordr */ evalDirector = new CriterioFormacionDirector (evalDirector);
+		/* decordr */ evalDirector = new CriterioCertificacion (evalDirector);
 
 		
 		return evalDirector.cost();

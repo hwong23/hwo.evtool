@@ -24,6 +24,7 @@ public class EvaluarEducacion extends ControlEvaluacion {
 		/* decordr */ evalEducacion = new CriterioExperienciaEspecificaEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioExperienciaGeneralEducacion (evalEducacion);
 		/* decordr */ evalEducacion = new CriterioFormacionEducacion (evalEducacion);
+		/* decordr */ evalEducacion = new CriterioCertificacion (evalEducacion);
 	
 
 		return evalEducacion.cost();

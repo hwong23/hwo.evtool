@@ -4,14 +4,15 @@ import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioExperienciaGeneralEducacion extends CriterioEvaluacion {
-	Evaluacion evaluar;
+	private Evaluacion evaluar;
+	private String nombre = "Experiencia general edu";
 
 	public CriterioExperienciaGeneralEducacion(Evaluacion evaluar) {
 		this.evaluar = evaluar;
 	}
 
 	public String getDescription() {
-		return evaluar.getDescription() + ", Experiencia general";
+		return evaluar.getDescription() + ", " + this.nombre;
 	}
 
 	public double cost() {

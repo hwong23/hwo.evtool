@@ -5,7 +5,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioCertificacion extends CriterioEvaluacion {
 	private Evaluacion evaluar;
-	private String nombre = "Certificacion";
+	private String nombre = "Certificacion edu";
 
 	public CriterioCertificacion(Evaluacion evaluar) {
 		this.evaluar = evaluar;

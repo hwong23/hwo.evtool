@@ -5,7 +5,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioFormacionDirector extends CriterioEvaluacion {
 	private Evaluacion evaluar;
-	private String nombre = "Maestria/Doctorado";
+	private String nombre = "Maestria/Doctorado dir";
 
 	public CriterioFormacionDirector(Evaluacion evaluar) {
 		this.evaluar = evaluar;

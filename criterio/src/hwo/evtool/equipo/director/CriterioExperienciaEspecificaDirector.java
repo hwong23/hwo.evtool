@@ -5,7 +5,7 @@ import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioExperienciaEspecificaDirector extends CriterioEvaluacion {
 	private Evaluacion evaluar;
-	private String nombre = "Experiencia especifica";
+	private String nombre = "Experiencia especifica dir";
 
 	public CriterioExperienciaEspecificaDirector(Evaluacion evaluar) {
 		this.evaluar = evaluar;
