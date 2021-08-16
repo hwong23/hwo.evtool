@@ -4,7 +4,8 @@ import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionPropuestaProblema extends CriterioEvaluacion {
-	Evaluacion evaluar;
+	private Evaluacion evaluar;
+	private String nombre = "Problema";
 	
 	public CriterioEvaluacionPropuestaProblema (Evaluacion evaluar) {
 		this.evaluar = evaluar;
@@ -24,6 +25,7 @@ class CriterioEvaluacionPropuestaProblema extends CriterioEvaluacion {
 			}
 		}
 		
+		System.out.println("--- " + this.nombre  + " " + costo);
 		return costo + evaluar.cost();	
 	}
 }

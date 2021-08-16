@@ -3,14 +3,15 @@ package hwo.evtool.propuesta.tecnica;
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioEvaluacionPropuestaTecnica extends Evaluacion {
-	Evaluacion evaluar;
+	private Evaluacion evaluar;
+	private String nombre = "Tecnico";
 	
 	public CriterioEvaluacionPropuestaTecnica (Evaluacion evaluar) {
 		this.evaluar = evaluar;
 	}
 
 	public String getDescription() {
-		return evaluar.getDescription() + ", Tecnico";
+		return evaluar.getDescription() + ", " + this.nombre;
 	}
 
 	public double cost() {
@@ -22,6 +23,8 @@ class CriterioEvaluacionPropuestaTecnica extends Evaluacion {
 			case "B" : costo += 0.25;
 			}
 		}
+		
+		System.out.println("--- " + this.nombre + " " + costo);
 		
 		return costo + evaluar.cost();	
 	}

@@ -4,14 +4,15 @@ import hwo.evtool.evaluacion.CriterioEvaluacion;
 import hwo.evtool.evaluacion.Evaluacion;
 
 class CriterioFormacion extends CriterioEvaluacion {
-	Evaluacion evaluar;
+	private Evaluacion evaluar;
+	private String nombre = "Maestria/Doctorado";
 
 	public CriterioFormacion(Evaluacion evaluar) {
 		this.evaluar = evaluar;
 	}
 
 	public String getDescription() {
-		return evaluar.getDescription() + ", Maestria/Doctorado";
+		return evaluar.getDescription() + ", " + this.nombre;
 	}
 
 	public double cost() {
@@ -21,6 +22,7 @@ class CriterioFormacion extends CriterioEvaluacion {
 		if (formacion > 1) costo = 8.0;
 		else if (formacion == 1) costo = Double.parseDouble(Evaluacion.edata.get("formacion"));
 		
+		System.out.println("--- " + this.nombre + " " + costo);
 		return costo + evaluar.cost();
 	}
 }
