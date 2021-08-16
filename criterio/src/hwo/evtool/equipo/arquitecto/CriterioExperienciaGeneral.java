@@ -15,6 +15,6 @@ class CriterioExperienciaGeneral extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return .30 + evaluar.cost();
+		return 0.0 + evaluar.cost();
 	}
 }

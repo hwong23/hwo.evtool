@@ -17,6 +17,7 @@ class CriterioExperienciaEspecificaEducacion extends CriterioEvaluacion {
 	public double cost() {
 		String experiencia = Evaluacion.edata.get("experiencia");
 		double costo = Double.parseDouble(experiencia) * 2;
-		return costo;
+		
+		return costo + evaluar.cost();
 	}
 }

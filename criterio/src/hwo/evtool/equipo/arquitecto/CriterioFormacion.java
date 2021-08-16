@@ -15,6 +15,12 @@ class CriterioFormacion extends CriterioEvaluacion {
 	}
 
 	public double cost() {
-		return .20 + evaluar.cost();
+		Double costo = 0.0; 
+		int formacion = Integer.parseInt( Evaluacion.edata.get("formacion") );
+		
+		if (formacion > 1) costo = 8.0;
+		else if (formacion == 1) costo = Double.parseDouble(Evaluacion.edata.get("formacion"));
+		
+		return costo + evaluar.cost();
 	}
 }
