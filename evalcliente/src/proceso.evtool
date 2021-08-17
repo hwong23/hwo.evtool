@@ -1,0 +1,24 @@
+evaluaciones
+	EvaluarProblema probCriterio1 
+		criterio : "criterio 1" calificacion : A
+		criterio : "criterio 11" calificacion : B
+		criterio : "criterio 1111" calificacion : M 
+	EvaluarProblema probCriterio2 
+		criterio : "criterio 2" calificacion : A
+		criterio : "criterio 22" calificacion : M
+	EvaluarTecnica tecnCriterio1 criterio : "criterio 3" calificacion : B
+	EvaluarArquitecto arqHWO formacion : 1 experiencia : 2 certificacion : 3
+	EvaluarDirector dirHWO formacion : 4 experiencia : 5 certificacion : 6
+	EvaluarEducacion eduHWO certificacion : 9 formacion : 8 experiencia: 7
+ 
+componente Propuesta actions {
+		probCriterio1
+		probCriterio2
+		tecnCriterio1
+	}
+
+componente Equipo actions {
+		arqHWO
+		dirHWO
+		eduHWO
+	}
