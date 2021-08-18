@@ -1,2 +1,2 @@
 # hwo.evtool
-version main 1.0.5
+version main 1.0.6
