@@ -2,9 +2,9 @@ import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.ejecucion.Control;
 
 public class Propuesta {
-		String[] str_probCriterio1 = {"probCriterio1", "criterio 1/:A","criterio 11/:B","criterio 1111/:M", "CalificarPropuesta"};
-		String[] str_probCriterio2 = {"probCriterio2", "criterio 2/:A","criterio 22/:M", "CalificarPropuesta"};
-		String[] str_tecnCriterio1 = {"tecnCriterio1", "criterio 3/:B", "CalificarPropuesta"};
+		String[] str_probCriterio1 = {"probCriterio1", "entendimiento/:A","claridad/:B","tecnología/:M", "CalificarPropuesta"};
+		String[] str_probCriterio2 = {"probCriterio2", "entendimiento/:A","personalización/:M", "CalificarPropuesta"};
+		String[] str_arqHWO = {"arqHWO", "EvaluarArquitecto", "Maestria", "2", "3", "CalificarEquipo"};
 
 	public static void main(String[] args) {
 		new Propuesta().run();
@@ -16,11 +16,11 @@ public class Propuesta {
 		
 		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprobCriterio1 = new Cmpnnt_EvaluarProblema(str_probCriterio1);
 		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprobCriterio2 = new Cmpnnt_EvaluarProblema(str_probCriterio2);
-		/* solicitd */ Cmpnnt_EvaluarTecnica cmpnttecnCriterio1 = new Cmpnnt_EvaluarTecnica(str_tecnCriterio1);
+		/* solicitd */ Cmpnnt_EvaluarArquitecto cmpntarqHWO = new Cmpnnt_EvaluarArquitecto(str_arqHWO);
 		
 		/* llamador */ cntrol.setComando(0, cmpntprobCriterio1);
 		/* llamador */ cntrol.setComando(1, cmpntprobCriterio2);
-		/* llamador */ cntrol.setComando(2, cmpnttecnCriterio1);
+		/* llamador */ cntrol.setComando(2, cmpntarqHWO);
 
 		cntrol.llamarEvaluacion(0);
 		cntrol.llamarEvaluacion(1);
