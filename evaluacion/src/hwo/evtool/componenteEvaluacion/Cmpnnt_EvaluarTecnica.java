@@ -18,9 +18,9 @@ public class Cmpnnt_EvaluarTecnica implements Comando {
 	public double ejecutar() {
 		/* contrldr */ this.tecnica = new EvaluarTecnica(evaldata);
 
-		System.out.println("--- Comando " + this.nombre + " ---");
+		System.out.println("Comando " + this.nombre + " ---");
 		double costo = this.tecnica.evaluar();
-		System.out.println(this.tecnica.getDescription()
+		System.out.println("---" + this.tecnica.getDescription()
 				+ " $" + costo);
 		
 		return costo;

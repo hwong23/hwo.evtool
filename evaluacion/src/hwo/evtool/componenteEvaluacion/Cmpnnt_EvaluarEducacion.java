@@ -18,9 +18,9 @@ public class Cmpnnt_EvaluarEducacion implements Comando {
 	public double ejecutar() {
 		/* contrldr */ this.educacion = new EvaluarEducacion(this.evaldata);
 
-		System.out.println("--- Comando " + this.nombre + " ---");
+		System.out.println("Comando " + this.nombre + " ---");
 		double costo = this.educacion.evaluar();
-		System.out.println(this.educacion.getDescription()
+		System.out.println("---" + this.educacion.getDescription()
 				+ " $" + costo);
 		
 		return costo;

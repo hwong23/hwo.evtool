@@ -17,10 +17,11 @@ class CriterioFormacion extends CriterioEvaluacion {
 
 	public double cost() {
 		Double costo = 0.0; 
-		int formacion = Integer.parseInt( Evaluacion.edata.get("formacion") );
+		String formacion = Evaluacion.edata.get("formacion");
 		
-		if (formacion > 1) costo = 8.0;
-		else if (formacion == 1) costo = Double.parseDouble(Evaluacion.edata.get("formacion"));
+		if (formacion.equals("Especializacion")) costo = 1.0;
+		else if (formacion.equals("Maestria")) costo = 2.0;
+		else if (formacion.equals("Doctorado")) costo = 8.0;
 		
 		System.out.println("--- " + this.nombre + " " + costo);
 		return costo + evaluar.cost();

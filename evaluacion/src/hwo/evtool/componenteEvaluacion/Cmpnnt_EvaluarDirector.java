@@ -18,9 +18,9 @@ public class Cmpnnt_EvaluarDirector implements Comando {
 	public double ejecutar() {
 		/* contrldr */ this.director = new EvaluarDirector(this.evaldata);
 		
-		System.out.println("--- Comando " + this.nombre + " ---");
+		System.out.println("Comando " + this.nombre + " ---");
 		double costo = this.director.evaluar();
-		System.out.println(this.director.getDescription()
+		System.out.println("---" + this.director.getDescription()
 				+ " $" + costo);
 		
 		return costo;

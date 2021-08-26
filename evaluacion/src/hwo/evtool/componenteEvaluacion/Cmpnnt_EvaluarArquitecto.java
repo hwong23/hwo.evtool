@@ -19,9 +19,9 @@ public class Cmpnnt_EvaluarArquitecto implements Comando {
 		/* contrldr */ this.arquitecto = new EvaluarArquitecto(this.evaldata);
 
 
-		System.out.println("--- Comando " + this.nombre + " ---");
+		System.out.println("Comando " + this.nombre + " ---");
 		double costo = this.arquitecto.evaluar();
-		System.out.println(this.arquitecto.getDescription()
+		System.out.println("--- " + this.arquitecto.getDescription()
 				+ " $" + costo);
 		
 		return costo;

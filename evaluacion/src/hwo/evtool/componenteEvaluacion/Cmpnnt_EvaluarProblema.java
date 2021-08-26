@@ -18,9 +18,9 @@ public class Cmpnnt_EvaluarProblema implements Comando {
 	public double ejecutar() {
 		/* contrldr */ this.problema = new EvaluarProblema(this.evaldata);
 
-		System.out.println("--- Comando " + this.nombre + " ---");
+		System.out.println("Comando " + this.nombre + " ---");
 		double costo = this.problema.evaluar();
-		System.out.println(this.problema.getDescription()
+		System.out.println("---" + this.problema.getDescription()
 				+ " $" + costo);
 		
 		return costo; 
