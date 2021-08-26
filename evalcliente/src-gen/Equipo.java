@@ -2,12 +2,16 @@ import hwo.evtool.componenteEvaluacion.*;
 import hwo.evtool.ejecucion.Control;
 
 public class Equipo {
-
-	public static void main(String[] args) {
 		String[] str_arqHWO = {"arqHWO", "EvaluarArquitecto", "1", "2", "3", "CalificarEquipo"};
 		String[] str_dirHWO = {"dirHWO", "EvaluarDirector", "4", "5", "6", "CalificarEquipo"};
 		String[] str_eduHWO = {"eduHWO", "EvaluarEducacion", "8", "7", "9", "CalificarEquipo"};
 
+	public static void main(String[] args) {
+		new Equipo().run();
+		
+	}
+	
+	protected void run() {
 		Control cntrol = new Control ();
 		
 		/* solicitd */ Cmpnnt_EvaluarArquitecto cmpntarqHWO = new Cmpnnt_EvaluarArquitecto(str_arqHWO);
@@ -23,10 +27,5 @@ public class Equipo {
 		cntrol.llamarEvaluacion(2);
 		
 		System.out.println("--- Total " + cntrol.getTotal());
-		
-	}
-	
-	protected void run() {
-		
 	}
 }
