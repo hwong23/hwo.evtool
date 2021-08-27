@@ -1,20 +1,34 @@
 evaluaciones
-	EvaluarProblema probCriterio1 
-		criterio : "entendimiento" calificacion : A
-		criterio : "claridad" calificacion : B
-		criterio : "tecnología" calificacion : M 
-	EvaluarProblema probCriterio2 
+	EvaluarProblema entendimiento 
+		criterio : "Conceptos generales del SPE" calificacion : A
+		criterio : "Factores y variables que están afectando a la UAESPE" calificacion : B
+		criterio : "Limitaciones y retos del modelo de atención a prestadores" calificacion : M
+		criterio : "Concepto SISE" calificacion : M 
+		criterio : "Limitaciones SISE" calificacion : M
+		
+	EvaluarProblema propuesta 
 		criterio : "entendimiento" calificacion : A
 		criterio : "personalización" calificacion : M
+		
+	EvaluarProblema valoragregado
+		criterio : "entendimiento" calificacion : A
+		criterio : "personalización" calificacion : M
+		
+	EvaluarProblema procesosFuncionalidades
+		criterio : "entendimiento" calificacion : A
+		criterio : "personalización" calificacion : M
+		
+		
 	EvaluarTecnica tecnCriterio1 criterio : "recursos" calificacion : B
 	EvaluarArquitecto arqHWO formacion : Maestria experiencia : 2 certificacion : 3
 	EvaluarDirector dirHWO formacion : Doctorado experiencia : 5 certificacion : 6
 	EvaluarEducacion eduHWO certificacion : 9 formacion : Maestria experiencia: 7
  
-componente Propuesta actions {
-		probCriterio1
-		probCriterio2
-		arqHWO
+componente Enfoque actions {
+		entendimiento
+		propuesta
+		valoragregado
+		procesosFuncionalidades
 	}
 
 componente Equipo actions {
