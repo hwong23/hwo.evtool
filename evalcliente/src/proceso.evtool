@@ -1,14 +1,30 @@
 evaluaciones
 	EvaluarProblema entendimiento 
-		criterio : "Conceptos generales del SPE" calificacion : A
-		criterio : "Factores y variables que están afectando a la UAESPE" calificacion : B
-		criterio : "Limitaciones y retos del modelo de atención a prestadores" calificacion : M
-		criterio : "Concepto SISE" calificacion : M 
-		criterio : "Limitaciones SISE" calificacion : M
+		criterio : "Fomento de la movilidad educativa, formativa y laboral" calificacion : A
+		criterio : "Adecuación entre oferta y demanda de mercado de trabajo" calificacion : A
+		criterio : "Promoción del aprendizaje a lo largo de la vida" calificacion : A
+		criterio : "Valoración de distintas formas de aprender / de cualificarse" calificacion : A
+		criterio : "Fortalecimiento del capital humano" calificacion : A
+		criterio : "Alineación de la educación y la formación con las necesidades del sector productivo" calificacion : A
+		criterio : "Plataforma del Sistema Nacional de Cualificaciones" calificacion : A
+		criterio : "Marco Nacional de Cualificaciones" calificacion : A
+		criterio : "Subsistema de evaluación y certificación de competencias" calificacion : A
+		criterio : "Esquema de movilidad educativa y formativa" calificacion : A
+		criterio : "Subsistema de normalización de competencias" calificacion : A
+		criterio : "Subsistema de aseguramiento de la calidad de la formación para el trabajo" calificacion : A
+		criterio : "Se evidencia la consulta y análisis de información relacionada con Sistemas de Cualificaciones, por ejemplo: catálogos de ocupaciones, Marcos de Cualificaciones, vías de cualificación, mecanismos de reconocimiento, herramientas o sistemas de información asociados a cualificaciones" calificacion : A
+		criterio : "Hace referencia a la relación (conceptual, operativa o estratégica) entre los componentes del Sistema Nacional de Cualificaciones y posibles elementos comunes entre componentes" calificacion : A
+		criterio : "Interoperabilidad con otros sistemas: Mesas sectoriales SENA, Bases de datos de Certificación de Competencias" calificacion : A
+		criterio : "Interoperabilidad con otros sistemas: SPE vacantes, SPE hojas de vida" calificacion : A
 		
 	EvaluarProblema propuesta 
-		criterio : "entendimiento" calificacion : A
-		criterio : "personalización" calificacion : M
+		criterio : "La propuesta es consistente con el entendimiento del problema" calificacion : A
+		criterio : "La propuesta toma en consideración los niveles de usuarios y los tipos de información que se les debe proveer" calificacion : A
+		criterio : "De ser realizada ayudaría a cumplir los objetivos de la política pública" calificacion : A
+		criterio : "Metodología de priorización de requerimientos funcionales" calificacion : A
+		criterio : "La propuesta es adecuada a un contexto de política pública" calificacion : A
+		criterio : "Coherencia entre requerimientos priorizados" calificacion : A
+		criterio : "Estadísticas y visualizaciones (requerimientos)" calificacion : A
 		
 	EvaluarProblema valoragregado
 		criterio : "entendimiento" calificacion : A
