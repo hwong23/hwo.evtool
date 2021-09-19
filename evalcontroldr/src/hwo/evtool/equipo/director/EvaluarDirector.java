@@ -1,9 +1,9 @@
 package hwo.evtool.equipo.director;
 
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
+import hwo.evtool.control.componente.ControlComponente;
 import hwo.evtool.evaluacion.Evaluacion;
 
-public class EvaluarDirector extends ControlEvaluacion {
+public class EvaluarDirector extends ControlComponente {
 	AdaptadorCriterioDirector adaptdr = new AdaptadorCriterioDirector();
 	
 	public EvaluarDirector(String[] evaldata) {

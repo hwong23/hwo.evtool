@@ -1,9 +1,9 @@
 package hwo.evtool.equipo.educacion;
 
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
+import hwo.evtool.control.componente.ControlComponente;
 import hwo.evtool.evaluacion.Evaluacion;
 
-public class EvaluarEducacion extends ControlEvaluacion {
+public class EvaluarEducacion extends ControlComponente {
 	AdaptadorCriterioEducacion adaptdr = new AdaptadorCriterioEducacion();
 	
 	public EvaluarEducacion(String[] evaldata) {

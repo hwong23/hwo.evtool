@@ -1,11 +1,11 @@
 package hwo.evtool.propuesta.tecnica;
 
 
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
+import hwo.evtool.control.componente.ControlComponente;
 import hwo.evtool.evaluacion.Evaluacion;
 
 
-public class EvaluarTecnica extends ControlEvaluacion {
+public class EvaluarTecnica extends ControlComponente {
 	AdaptadorCriterioTecnica adaptdr = new AdaptadorCriterioTecnica();
 	
 	public EvaluarTecnica(String[] str_evaldata) {

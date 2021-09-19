@@ -1,9 +1,9 @@
 package hwo.evtool.equipo.arquitecto;
 
-import hwo.evtool.control.evaluacion.ControlEvaluacion;
+import hwo.evtool.control.componente.ControlComponente;
 import hwo.evtool.evaluacion.Evaluacion;
 
-/* contrldr */ public class EvaluarArquitecto extends ControlEvaluacion {
+/* contrldr */ public class EvaluarArquitecto extends ControlComponente {
 	AdaptadorCriterioArquitecto adaptdr = new AdaptadorCriterioArquitecto();
 	
 	public EvaluarArquitecto(String[] evaldata) {

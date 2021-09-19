@@ -1,11 +1,11 @@
-package hwo.evtool.control.evaluacion;
+package hwo.evtool.control.componente;
 
 
-/* plntlla */ public abstract class ControlEvaluacion {
+/* plntlla */ public abstract class ControlComponente {
 	protected String descripcion = "Control evaluaion";
 	protected String[] str_evalData;
 
-	public ControlEvaluacion(String[] evaldata) {
+	public ControlComponente(String[] evaldata) {
 		// TODO Auto-generated constructor stub
 		this.str_evalData = evaldata;
 	}

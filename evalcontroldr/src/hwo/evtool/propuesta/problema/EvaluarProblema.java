@@ -1,10 +1,10 @@
 package hwo.evtool.propuesta.problema;
 
+import hwo.evtool.control.componente.*;
 import hwo.evtool.evaluacion.Evaluacion;
-import hwo.evtool.control.evaluacion.*;
 
 
-/* contrldr */ public class EvaluarProblema extends ControlEvaluacion {
+/* contrldr */ public class EvaluarProblema extends ControlComponente {
 	AdaptadorCriterioProblema adaptdr = new AdaptadorCriterioProblema();
 	
 	public EvaluarProblema(String[] evaldata) {
