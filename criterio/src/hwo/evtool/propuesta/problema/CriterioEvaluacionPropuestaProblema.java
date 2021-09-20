@@ -17,7 +17,7 @@ class CriterioEvaluacionPropuestaProblema extends CriterioEvaluacion {
 
 	public double cost() {
 		double costo = 0.0;
-		for (int i = 1; i <= Evaluacion.edata.size() - 2; i++) {
+		for (int i = 1; i <= Evaluacion.edata.size() - 3; i++) {
 			switch (Evaluacion.edata.get("i"+i)) {
 			case "A" : costo += 4.0; break;
 			case "M" : costo += 2.0; break;

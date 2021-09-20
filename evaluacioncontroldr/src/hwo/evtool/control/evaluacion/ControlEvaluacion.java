@@ -1,20 +1,22 @@
 package hwo.evtool.control.evaluacion;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+
+import hwo.evtool.compnt.fabricasimple.FabricaSimpleComponente;
 
 
 /* plntlla */ public abstract class ControlEvaluacion {
-	protected String descripcion = "Control evaluaion";
-	protected String[] str_evalData;
-	protected Map<Integer, String[]> map_evalData = new HashMap<Integer, String[]>();
+	protected String descripcion = "(super) Control evaluaion";
+	protected ArrayList<String[]> map_evalData = new ArrayList<String[]>();
+	protected FabricaSimpleComponente fabricaComponente = new FabricaSimpleComponente();
+		
 
 	public ControlEvaluacion() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public void setEntrada (int i, String[] str_entendimiento) {
-		map_evalData.put(i, str_entendimiento);
+		map_evalData.add(str_entendimiento);
 	}
 	
 	private double hk_redondearPuntaje(double puntaje) {

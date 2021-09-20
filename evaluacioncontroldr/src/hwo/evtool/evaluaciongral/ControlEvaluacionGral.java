@@ -1,6 +1,6 @@
 package hwo.evtool.evaluaciongral;
 
-import hwo.evtool.componenteEvaluacion.*;
+import hwo.evtool.comando.Comando;
 import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.ejecucion.Control;
 
@@ -16,10 +16,10 @@ public class ControlEvaluacionGral extends ControlEvaluacion {
 		// TODO Auto-generated method stub
 		Control cntrol = new Control ();
 		
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntentendimiento = new Cmpnnt_EvaluarProblema(this.map_evalData.get(0));
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntpropuesta = new Cmpnnt_EvaluarProblema(this.map_evalData.get(1));
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntvaloragregado = new Cmpnnt_EvaluarProblema(this.map_evalData.get(2));
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprocesosFuncionalidades = new Cmpnnt_EvaluarProblema(this.map_evalData.get(3));
+		/* solicitd */ Comando cmpntentendimiento = fabricaComponente.crearComponente("EvaluarProblema", this.map_evalData.get(0));
+		/* solicitd */ Comando cmpntpropuesta = fabricaComponente.crearComponente("EvaluarProblema", this.map_evalData.get(1));
+		/* solicitd */ Comando cmpntvaloragregado = fabricaComponente.crearComponente("EvaluarProblema", this.map_evalData.get(2));
+		/* solicitd */ Comando cmpntprocesosFuncionalidades = fabricaComponente.crearComponente("EvaluarProblema", this.map_evalData.get(3));
 		
 		/* llamador */ cntrol.setComando(0, cmpntentendimiento);
 		/* llamador */ cntrol.setComando(1, cmpntpropuesta);

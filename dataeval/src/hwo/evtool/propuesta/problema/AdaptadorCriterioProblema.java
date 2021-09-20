@@ -24,10 +24,11 @@ class AdaptadorCriterioProblema {
 	}
 
 	public Map<String, String> escribirEvaluacion(String[] evaldata) {
-		dataProblema.put("item", evaldata[0]);
+		dataProblema.put("tipoitem", evaldata[0]);
+		dataProblema.put("item", evaldata[1]);
 		dataProblema.put("tipo", evaldata[evaldata.length - 1]);
-		for (int i = 1; i <= evaldata.length - 2; i++) {
-			String[] str_campo = evaldata[i].split("/:"); 
+		for (int i = 1; i <= evaldata.length - 3; i++) {
+			String[] str_campo = evaldata[i+1].split("/:"); 
 			dataProblema.put("i"+i, str_campo[1]);
 		}
 		
