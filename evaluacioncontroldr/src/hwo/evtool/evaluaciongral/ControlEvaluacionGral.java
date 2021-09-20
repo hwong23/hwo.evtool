@@ -5,27 +5,21 @@ import hwo.evtool.control.evaluacion.ControlEvaluacion;
 import hwo.evtool.ejecucion.Control;
 
 public class ControlEvaluacionGral extends ControlEvaluacion {
-	public ControlEvaluacionGral(String[] evaldata) {
-		super(evaldata);
+	public ControlEvaluacionGral() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 
 
-	String[] str_entendimiento = {"entendimiento", "Conceptos generales del SPE/:A","Factores y variables que están afectando a la UAESPE/:B","Limitaciones y retos del modelo de atención a prestadores/:M","Concepto SISE/:M","Limitaciones SISE/:M", "CalificarPropuesta"};
-	String[] str_propuesta = {"propuesta", "entendimiento/:A","personalización/:M", "CalificarPropuesta"};
-	String[] str_valoragregado = {"valoragregado", "entendimiento/:A","personalización/:M", "CalificarPropuesta"};
-	String[] str_procesosFuncionalidades = {"procesosFuncionalidades", "entendimiento/:A","personalización/:M", "CalificarPropuesta"};
-
-	
 	@Override
 	protected double llamarComponentesEvaluacion() {
 		// TODO Auto-generated method stub
 		Control cntrol = new Control ();
 		
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntentendimiento = new Cmpnnt_EvaluarProblema(str_entendimiento);
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntpropuesta = new Cmpnnt_EvaluarProblema(str_propuesta);
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntvaloragregado = new Cmpnnt_EvaluarProblema(str_valoragregado);
-		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprocesosFuncionalidades = new Cmpnnt_EvaluarProblema(str_procesosFuncionalidades);
+		/* solicitd */ Cmpnnt_EvaluarProblema cmpntentendimiento = new Cmpnnt_EvaluarProblema(this.map_evalData.get(0));
+		/* solicitd */ Cmpnnt_EvaluarProblema cmpntpropuesta = new Cmpnnt_EvaluarProblema(this.map_evalData.get(1));
+		/* solicitd */ Cmpnnt_EvaluarProblema cmpntvaloragregado = new Cmpnnt_EvaluarProblema(this.map_evalData.get(2));
+		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprocesosFuncionalidades = new Cmpnnt_EvaluarProblema(this.map_evalData.get(3));
 		
 		/* llamador */ cntrol.setComando(0, cmpntentendimiento);
 		/* llamador */ cntrol.setComando(1, cmpntpropuesta);

@@ -12,24 +12,15 @@ public class Enfoque {
 	}
 	
 	protected void run() {
-		ControlEvaluacionGral controlEv = new ControlEvaluacionGral(str_entendimiento);
+		ControlEvaluacionGral controlEv = new ControlEvaluacionGral();
+		
+		/* llamador */ controlEv.setEntrada(0, str_entendimiento);
+		/* llamador */ controlEv.setEntrada(1, str_propuesta);
+		/* llamador */ controlEv.setEntrada(2, str_valoragregado);
+		/* llamador */ controlEv.setEntrada(3, str_procesosFuncionalidades);
+
 		controlEv.evaluar();
-//		
-//		/* solicitd */ Cmpnnt_EvaluarProblema cmpntentendimiento = new Cmpnnt_EvaluarProblema(str_entendimiento);
-//		/* solicitd */ Cmpnnt_EvaluarProblema cmpntpropuesta = new Cmpnnt_EvaluarProblema(str_propuesta);
-//		/* solicitd */ Cmpnnt_EvaluarProblema cmpntvaloragregado = new Cmpnnt_EvaluarProblema(str_valoragregado);
-//		/* solicitd */ Cmpnnt_EvaluarProblema cmpntprocesosFuncionalidades = new Cmpnnt_EvaluarProblema(str_procesosFuncionalidades);
-//		
-//		/* llamador */ cntrol.setComando(0, cmpntentendimiento);
-//		/* llamador */ cntrol.setComando(1, cmpntpropuesta);
-//		/* llamador */ cntrol.setComando(2, cmpntvaloragregado);
-//		/* llamador */ cntrol.setComando(3, cmpntprocesosFuncionalidades);
-//
-//		cntrol.llamarEvaluacion(0);
-//		cntrol.llamarEvaluacion(1);
-//		cntrol.llamarEvaluacion(2);
-//		cntrol.llamarEvaluacion(3);
-//		
-//		System.out.println("--- Total " + cntrol.getTotal());
+
+//		System.out.println("--- Total " + controlEv.getTotal());
 	}
 }
