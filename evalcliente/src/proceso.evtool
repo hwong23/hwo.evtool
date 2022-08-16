@@ -1,38 +1,38 @@
 evaluaciones
 	EvaluarProblema entendimiento 
 		criterio : "Fomento de la movilidad educativa, formativa y laboral" calificacion : A
-		criterio : "Adecuación entre oferta y demanda de mercado de trabajo" calificacion : A
-		criterio : "Promoción del aprendizaje a lo largo de la vida" calificacion : A
-		criterio : "Valoración de distintas formas de aprender / de cualificarse" calificacion : A
+		criterio : "Adecuacion entre oferta y demanda de mercado de trabajo" calificacion : A
+		criterio : "Promocion del aprendizaje a lo largo de la vida" calificacion : A
+		criterio : "Valoracion de distintas formas de aprender / de cualificarse" calificacion : A
 		criterio : "Fortalecimiento del capital humano" calificacion : A
-		criterio : "Alineación de la educación y la formación con las necesidades del sector productivo" calificacion : A
+		criterio : "Alineacion de la educaciï¿½n y la formaciï¿½n con las necesidades del sector productivo" calificacion : A
 		criterio : "Plataforma del Sistema Nacional de Cualificaciones" calificacion : A
 		criterio : "Marco Nacional de Cualificaciones" calificacion : A
-		criterio : "Subsistema de evaluación y certificación de competencias" calificacion : A
+		criterio : "Subsistema de evaluaciï¿½n y certificaciï¿½n de competencias" calificacion : A
 		criterio : "Esquema de movilidad educativa y formativa" calificacion : A
-		criterio : "Subsistema de normalización de competencias" calificacion : A
-		criterio : "Subsistema de aseguramiento de la calidad de la formación para el trabajo" calificacion : A
-		criterio : "Se evidencia la consulta y análisis de información relacionada con Sistemas de Cualificaciones, por ejemplo: catálogos de ocupaciones, Marcos de Cualificaciones, vías de cualificación, mecanismos de reconocimiento, herramientas o sistemas de información asociados a cualificaciones" calificacion : A
-		criterio : "Hace referencia a la relación (conceptual, operativa o estratégica) entre los componentes del Sistema Nacional de Cualificaciones y posibles elementos comunes entre componentes" calificacion : A
-		criterio : "Interoperabilidad con otros sistemas: Mesas sectoriales SENA, Bases de datos de Certificación de Competencias" calificacion : A
+		criterio : "Subsistema de normalizaciï¿½n de competencias" calificacion : A
+		criterio : "Subsistema de aseguramiento de la calidad de la formaciï¿½n para el trabajo" calificacion : A
+		criterio : "Se evidencia la consulta y anï¿½lisis de informaciï¿½n relacionada con Sistemas de Cualificaciones, por ejemplo: catï¿½logos de ocupaciones, Marcos de Cualificaciones, vï¿½as de cualificaciï¿½n, mecanismos de reconocimiento, herramientas o sistemas de informaciï¿½n asociados a cualificaciones" calificacion : A
+		criterio : "Hace referencia a la relaciï¿½n (conceptual, operativa o estratï¿½gica) entre los componentes del Sistema Nacional de Cualificaciones y posibles elementos comunes entre componentes" calificacion : A
+		criterio : "Interoperabilidad con otros sistemas: Mesas sectoriales SENA, Bases de datos de Certificaciï¿½n de Competencias" calificacion : A
 		criterio : "Interoperabilidad con otros sistemas: SPE vacantes, SPE hojas de vida" calificacion : A
 		
 	EvaluarProblema propuesta 
 		criterio : "La propuesta es consistente con el entendimiento del problema" calificacion : A
-		criterio : "La propuesta toma en consideración los niveles de usuarios y los tipos de información que se les debe proveer" calificacion : A
-		criterio : "De ser realizada ayudaría a cumplir los objetivos de la política pública" calificacion : A
-		criterio : "Metodología de priorización de requerimientos funcionales" calificacion : A
-		criterio : "La propuesta es adecuada a un contexto de política pública" calificacion : A
+		criterio : "La propuesta toma en consideraciï¿½n los niveles de usuarios y los tipos de informaciï¿½n que se les debe proveer" calificacion : A
+		criterio : "De ser realizada ayudarï¿½a a cumplir los objetivos de la polï¿½tica pï¿½blica" calificacion : A
+		criterio : "Metodologia de priorizaciï¿½n de requerimientos funcionales" calificacion : A
+		criterio : "La propuesta es adecuada a un contexto de polï¿½tica pï¿½blica" calificacion : A
 		criterio : "Coherencia entre requerimientos priorizados" calificacion : A
-		criterio : "Estadísticas y visualizaciones (requerimientos)" calificacion : A
+		criterio : "Estadisticas y visualizaciones (requerimientos)" calificacion : A
 		
 	EvaluarProblema valoragregado
 		criterio : "entendimiento" calificacion : A
-		criterio : "personalización" calificacion : M
+		criterio : "personalizacion" calificacion : M
 		
 	EvaluarProblema procesosFuncionalidades
 		criterio : "entendimiento" calificacion : A
-		criterio : "personalización" calificacion : M
+		criterio : "personalizacion" calificacion : M
 		
 		
 	EvaluarTecnica tecnCriterio1 criterio : "recursos" calificacion : B

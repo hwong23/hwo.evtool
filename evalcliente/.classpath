@@ -8,5 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/evaluacioncontroldr"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/evaluacion"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
